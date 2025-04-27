@@ -5,11 +5,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rao Counseling PLLC</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Lora', serif;
       background: #f7fdf9;
       color: #333;
     }
@@ -71,7 +71,27 @@
       padding: 1em;
       font-size: 0.9em;
     }
-  </style>
+  </style> /* Style for all resource links as buttons */
+.section ul li {
+  list-style: none; /* remove bullets */
+  margin: 0.5em 0;
+}
+
+.section ul li a {
+  display: inline-block;
+  background-color: #4e9474;
+  color: white;
+  padding: 0.75em 1.25em;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.section ul li a:hover {
+  background-color: #357f62; /* darker green on hover */
+  transform: scale(1.05); /* slightly grows */
+}
 </head>
 <body>
   <header>
@@ -111,12 +131,19 @@
   </section>
 
   <section class="section" id="resources">
-    <h2>Blog & Resources</h2>
-    <p>“Growing Through What You’re Going Through” – Check back soon for helpful articles and culturally relevant mental health resources.</p>
-    <ul>
-      <li><a href="https://quietkit.com/box-breathing/" target="_blank">Box Breathing with QuietKit</a> – a free breathing and meditation tool, used by Navy SEALs to reduce stress quickly.</li>
-      <li><a href="https://insighttimer.com/" target="_blank">Insight Timer</a> – a free app offering thousands of guided meditations and resources for mental wellness.</li>
-    </ul>
+  <h2>Client Resources</h2>
+  <p>Helpful links for clients:</p>
+  <ul>
+    <!-- New resources first -->
+    <li><a href="https://api.portal.therapyappointment.com/n/public/findYourTherapist/A6BAEF410F874F5B95522ED7EFAA8372" target="_blank">📅 Schedule an Appointment</a></li>
+    <li><a href="https://doxy.me/charlierao" target="_blank">📹 Virtual Session Room</a></li>
+    <li><a href="https://www.psychologytoday.com/us/therapists/charlie-rao-missouri-city-tx/762997" target="_blank">📖 PsychologyToday Profile</a></li>
+    <li><a href="https://www.linkedin.com/in/charu-rao?trk=contact-info" target="_blank">💼 LinkedIn Page</a></li>
+
+    <!-- Original resources second -->
+    <li><a href="https://quietkit.com/box-breathing/" target="_blank">🧘 Box Breathing with QuietKit</a> – a free breathing and meditation tool, used by Navy SEALs to reduce stress quickly.</li>
+    <li><a href="https://insighttimer.com/" target="_blank">🧘 Insight Timer</a> – a free app offering thousands of guided meditations and resources for mental wellness.</li>
+  </ul>
   </section>
 
   <section class="contact" id="contact">
