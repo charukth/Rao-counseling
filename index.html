@@ -12,6 +12,7 @@
       font-family: 'Lora', serif;
       background: #f7fdf9;
       color: #333;
+      line-height: 1.5;
     }
     header {
       background: #a2d5c6;
@@ -66,7 +67,7 @@
     }
     .section ul li a {
       display: inline-block;
-      background-color: #90C695;
+      background-color: #a8dbc3;
       color: white;
       padding: 0.75em 1.25em;
       border-radius: 8px;
@@ -75,21 +76,27 @@
       transition: background-color 0.3s, transform 0.2s;
     }
     .section ul li a:hover {
-      background-color: #90C695;
+      background-color: #91cbb5;
       transform: scale(1.05);
     }
     .image-block img.lotus {
       filter: brightness(1.1) contrast(0.9) opacity(0.85);
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      max-width: 100%;
+      max-width: 350px;
       height: auto;
+      object-fit: cover;
     }
-    .image-block p.quote-text {
-      margin-top: 0.5em;
-      font-style: italic;
-      color: #555;
-      font-size: 1.1em;
+    .image-block img.bottom-photo {
+      max-width: 400px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    @media (max-width: 600px) {
+      .section {
+        padding: 2em 1em;
+      }
     }
   </style>
 </head>
@@ -100,7 +107,7 @@
     <nav>
       <a href="#about">About</a>
       <a href="#services">Services</a>
-      <a href="#resources">Blog</a>
+      <a href="#resources">Resources</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -115,8 +122,7 @@
     <p>Hi, I’m Charlie Rao, a Licensed Professional Counselor Associate based in Missouri City, TX. I specialize in helping adults, teens, and families—especially those from multicultural or South Asian backgrounds—navigate anxiety, depression, and bipolar disorder with warmth, understanding, and culturally informed care.</p>
 
     <div class="image-block">
-      <img src="Resized_Screenshot_20210512-183722_Photos_142445446614410.jpg" alt="No mud no lotus inspirational lotus image" class="lotus">
-      <p class="quote-text">"No mud, no lotus"</p>
+      <img src="Resized_Screenshot_20210512-183722_Photos_cropped.jpg" alt="No mud no lotus inspirational lotus image" class="lotus">
     </div>
   </section>
 
@@ -146,10 +152,8 @@
 
     <ul>
       <li><a href="https://quietkit.com/box-breathing/" target="_blank">🧘 Box Breathing with QuietKit</a> – a free breathing and meditation tool, used by Navy SEALs to reduce stress quickly.</li>
-      <li><a href="https://insighttimer.com/" target="_blank">🧘 Insight Timer</a> – a free app offering thousands of guided meditations and resources for mental wellness.
-      </li><a href="https://howwefeel.org/" target="_blank" rel="noopener noreferrer"> - How We Feel App: free mental health journal and mood tracker.</p>
-  </a>
-    </div>
+      <li><a href="https://insighttimer.com/" target="_blank">🧘 Insight Timer</a> – a free app offering thousands of guided meditations and resources for mental wellness.</li>
+      <li><a href="https://howwefeel.org/" target="_blank">✏️ How We Feel App</a> – free mental health journal and mood tracker.</li>
     </ul>
   </section>
 
@@ -162,8 +166,7 @@
 
   <section class="section">
     <div class="image-block">
-      <img src="Screenshot_20190927-112703_Chrome.jpg" alt="Quote about watering grass" class="lotus">
-      <p class="quote-text">"The grass isn’t greener on the other side. It’s greener where you water it."</p>
+      <img src="Screenshot_20190927-112703_Chrome.jpg" alt="Quote about watering grass" class="bottom-photo">
     </div>
   </section>
 
