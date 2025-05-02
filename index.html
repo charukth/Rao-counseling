@@ -20,27 +20,27 @@
       color: #fff;
     }
     nav {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 0.5em;
-  padding: 0.5em;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.5em;
+      padding: 0.5em;
     }
     nav a {
-  background-color: rgba(0, 0, 0, 0.2);
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1em;
-  padding: 0.4em 1em;
-  border-radius: 999px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-nav a:hover {
-  background-color: rgba(0, 0, 0, 0.35);
-  transform: translateY(-1px);
-}
+      background-color: rgba(0, 0, 0, 0.2);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1em;
+      padding: 0.4em 1em;
+      border-radius: 999px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    nav a:hover {
+      background-color: rgba(0, 0, 0, 0.35);
+      transform: translateY(-1px);
+    }
     .hero {
       background: url('https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?auto=format&fit=crop&w=1500&q=80') no-repeat center center;
       background-size: cover;
@@ -99,6 +99,13 @@ nav a:hover {
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       max-width: 350px;
+      max-height: 360px;
+      object-fit: cover;
+    }
+    .image-block img.quote-img {
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 350px;
       max-height: 420px;
       object-fit: cover;
     }
@@ -133,8 +140,8 @@ nav a:hover {
     <h2>About Charlie Rao, MS, LPC-A</h2>
     <p>Hi, I’m Charlie Rao, a Licensed Professional Counselor Associate based in Missouri City, TX. I specialize in helping adults, teens, and families—especially those from multicultural or South Asian backgrounds—navigate anxiety, depression, and bipolar disorder with warmth, understanding, and culturally informed care.</p>
     <div class="image-block">
-      <img src="Resized_Screenshot_20210512-183722_Photos_142445446614410.jpg" alt="Inspirational image of lotus flower with the quote 'No mud, no lotus'" class="lotus">
-      <p class="quote-text">"No mud, no lotus"</p>
+      <img src="Resized_Screenshot_20210512-183722_Photos_142445446614410.jpg" alt="Lotus flower with the quote 'No mud, no lotus'" class="lotus">
+      <p class="quote-text">"No mud, no lotus" — growth can emerge from struggle.</p>
     </div>
   </section>
 
@@ -187,7 +194,7 @@ nav a:hover {
 
   <section class="section">
     <div class="image-block">
-      <img src="Screenshot_20190927-112703_Chrome.jpg" alt="Quote image showing grass being watered with message about self-care" class="lotus">
+      <img src="Screenshot_20190927-112703_Chrome.jpg" alt="Quote image showing grass being watered with message about self-care" class="quote-img">
     </div>
   </section>
 
