@@ -12,71 +12,62 @@
       font-family: 'Lora', serif;
       background: #f7fdf9;
       color: #333;
-    }
-    header {
-      background: #a2d5c6;
-      padding: 1.5em;
-      text-align: center;
-      color: #fff;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 0.5em;
-      padding: 0.5em;
-    }
-    nav a {
-      background-color: rgba(0, 0, 0, 0.2);
-      color: #fff;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 1em;
-      padding: 0.4em 1em;
-      border-radius: 999px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-      transition: background-color 0.3s ease, transform 0.2s ease;
-    }
-    nav a:hover {
-      background-color: rgba(0, 0, 0, 0.35);
-      transform: translateY(-1px);
-    }
-    .hero {
-      background: url('https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?auto=format&fit=crop&w=1500&q=80') no-repeat center center;
-      background-size: cover;
-      color: white;
-      padding: 6em 2em;
-      text-align: center;
-    }
-    .hero h1 {
-      font-size: 2.5em;
-      margin-bottom: 0.5em;
-    }
-    .section {
-      padding: 3em 2em;
-      max-width: 800px;
-      margin: auto;
-    }
-    .section h2 {
-      color: #4e9474;
-    }
-    .image-block {
-      text-align: center;
-      margin-top: 2em;
-    }
-    .contact {
-      background: #e9f7f0;
-      padding: 2em;
-      text-align: center;
-    }
-    .footer {
-      background: #a2d5c6;
-      color: white;
-      text-align: center;
-      padding: 1em;
-      font-size: 0.9em;
-    }
-    .section ul {
+    }header {
+  background: #a2d5c6;
+  padding: 1.5em;
+  text-align: center;
+  color: #fff;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  padding: 0.5em;
+}
+
+nav a {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1em;
+  padding: 0.4em 1em;
+  border-radius: 999px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+  background-color: rgba(0, 0, 0, 0.35);
+  transform: translateY(-1px);
+}
+
+.hero {
+  background: url('https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?auto=format&fit=crop&w=1500&q=80') no-repeat center center;
+  background-size: cover;
+  color: white;
+  padding: 6em 2em;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.section {
+  padding: 3em 2em;
+  max-width: 800px;
+  margin: auto;
+}
+
+.section h2 {
+  color: #4e9474;
+}
+
+.section ul {
   padding-left: 0;
 }
 
@@ -86,27 +77,24 @@
   font-size: 1.1em;
 }
 
-/* Default leaf bullet for all list items */
 .section ul li::before {
-  content: "🌿";
+  content: "🍿";
   color: #4e9474;
   display: inline-block;
   width: 1.2em;
   margin-right: 0.4em;
 }
 
-/* Remove bullets for resources list */
 .section ul.resources li::before {
   content: none;
 }
 
-/* Style for resource buttons */
 .section ul.resources li a {
   display: inline-block;
   background-color: #B1E3CC;
   color: white;
   padding: 0.75em 1.25em;
-  border-radius: 8px;
+  border-radius: 999px;
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s, transform 0.2s;
@@ -115,33 +103,56 @@
 .section ul.resources li a:hover {
   background-color: #A0D8C1;
   transform: scale(1.05);
+}
 
-    
-    .image-block img.lotus {
-      filter: brightness(1.1) contrast(0.9) opacity(0.85);
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      width: 100%;
-      max-width: 350px;
-      height: 420px;
-      object-fit: cover 45%;
-      object-position: center;
-    }
-    .image-block img.quote-img {
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      max-width: 350px;
-      max-height: 440px;
-      object-fit: cover;
-    }
-    .image-block p.quote-text {
-      margin-top: 0.5em;
-      font-style: italic;
-      color: #555;
-      font-size: 1.1em;
-    }
+.image-block {
+  text-align: center;
+  margin-top: 2em;
+}
+
+.image-block img.lotus {
+  filter: brightness(1.1) contrast(0.9) opacity(0.85);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 350px;
+  height: 420px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.image-block img.quote-img {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 350px;
+  max-height: 440px;
+  object-fit: cover;
+}
+
+.image-block p.quote-text {
+  margin-top: 0.5em;
+  font-style: italic;
+  color: #555;
+  font-size: 1.1em;
+}
+
+.contact {
+  background: #e9f7f0;
+  padding: 2em;
+  text-align: center;
+}
+
+.footer {
+  background: #a2d5c6;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  font-size: 0.9em;
+}
+
   </style>
-</head><body>
+</head>
+<body>
   <header>
     <h1>Rao Counseling PLLC</h1>
     <nav aria-label="Main navigation">
@@ -190,12 +201,11 @@
       <li><a href="https://www.linkedin.com/in/charu-rao?trk=contact-info" target="_blank">💼 LinkedIn Page</a></li>
     </ul>
     <hr style="margin: 2em 0; border: 1px solid #ddd;">
-
-<ul class="resources">
-  <li><a href="https://quietkit.com/box-breathing/" target="_blank">🧘 Box Breathing with QuietKit</a></li>
-  <li><a href="https://insighttimer.com/" target="_blank">🧘 Insight Timer</a></li>
-  <li><a href="https://howwefeel.org/" target="_blank">🧠 How We Feel App</a></li>
-</ul>
+    <ul class="resources">
+      <li><a href="https://quietkit.com/box-breathing/" target="_blank">🧘 Box Breathing with QuietKit</a></li>
+      <li><a href="https://insighttimer.com/" target="_blank">🧘 Insight Timer</a></li>
+      <li><a href="https://howwefeel.org/" target="_blank">🧠 How We Feel App</a></li>
+    </ul>
   </section>  <section class="contact" id="contact">
     <h2>Contact</h2>
     <p><strong>Email:</strong> <a href="mailto:raocounseling@gmail.com">raocounseling@gmail.com</a></p>
