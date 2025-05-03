@@ -88,31 +88,39 @@
     .section ul li::marker {
       color: #4e9474;
     }
+/* No bullets on resource buttons */
+.section ul.resources {
+  list-style: none;
+  padding-left: 0;
+}
 
-    /* No bullets on resource buttons */
-    .section ul.resources {
-      list-style: none;
-      padding-left: 0;
-    }
-    .section ul.resources li {
-      margin: 0.75em 0;
-    }
+/* Remove green leaf bullets from resource list items */
+.section ul.resources li::before {
+  content: none !important;
+}
 
-    /* Resource buttons */
-    .section ul.resources li a {
-      display: inline-block;
-      background-color: #B1E3CC;
-      color: white;
-      padding: 0.75em 1.25em;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background-color 0.3s, transform 0.2s;
-    }
-    .section ul.resources li a:hover {
-      background-color: #A0D8C1;
-      transform: scale(1.05);
-    }
+.section ul.resources li {
+  padding-left: 0 !important;
+  position: static !important;
+  margin: 0.75em 0;
+}
+
+/* Resource buttons */
+.section ul.resources li a {
+  display: inline-block;
+  background-color: #B1E3CC;
+  color: white;
+  padding: 0.75em 1.25em;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.section ul.resources li a:hover {
+  background-color: #A0D8C1;
+  transform: scale(1.05);
+}
 
     .image-block img.lotus {
       filter: brightness(1.1) contrast(0.9) opacity(0.85);
