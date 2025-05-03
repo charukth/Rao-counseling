@@ -77,33 +77,45 @@
       font-size: 0.9em;
     }
     .section ul {
-      padding-left: 0;
-    }
-    .section ul li {
-      list-style: none;
-      margin: 0.75em 0;
-      font-size: 1.1em;
-    }
-    .section ul li::before {
-      content: "🌿";
-      color: #4e9474;
-      display: inline-block;
-      width: 1.2em;
-      margin-right: 0.4em;
-    }
-    .section ul.resources li a {
-      display: inline-block;
-      background-color: #B1E3CC;
-      color: white;
-      padding: 0.75em 1.25em;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background-color 0.3s, transform 0.2s;
-    }
-    .section ul.resources li a:hover {
-      background-color: #A0D8C1;
-      transform: scale(1.05);
+  padding-left: 0;
+}
+
+.section ul li {
+  list-style: none;
+  margin: 0.75em 0;
+  font-size: 1.1em;
+}
+
+/* Default leaf bullet for all list items */
+.section ul li::before {
+  content: "🌿";
+  color: #4e9474;
+  display: inline-block;
+  width: 1.2em;
+  margin-right: 0.4em;
+}
+
+/* Remove bullets for resources list */
+.section ul.resources li::before {
+  content: none;
+}
+
+/* Style for resource buttons */
+.section ul.resources li a {
+  display: inline-block;
+  background-color: #B1E3CC;
+  color: white;
+  padding: 0.75em 1.25em;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.section ul.resources li a:hover {
+  background-color: #A0D8C1;
+  transform: scale(1.05);
+}
     }
     .image-block img.lotus {
       filter: brightness(1.1) contrast(0.9) opacity(0.85);
@@ -119,7 +131,7 @@
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       max-width: 350px;
-      max-height: 420px;
+      max-height: 440px;
       object-fit: cover;
     }
     .image-block p.quote-text {
@@ -178,7 +190,8 @@
       <li><a href="https://www.linkedin.com/in/charu-rao?trk=contact-info" target="_blank">💼 LinkedIn Page</a></li>
     </ul>
     <hr style="margin: 2em 0; border: 1px solid #ddd;">
-    <ul class="resources">
+    
+}
       <li><a href="https://quietkit.com/box-breathing/" target="_blank">🧘 Box Breathing with QuietKit</a></li>
       <li><a href="https://insighttimer.com/" target="_blank">🧘 Insight Timer</a></li>
       <li><a href="https://howwefeel.org/" target="_blank">🧠 How We Feel App</a></li>
