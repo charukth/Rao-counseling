@@ -1,5 +1,6 @@
 
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -75,72 +76,67 @@
       text-align: center;
       padding: 1em;
       font-size: 0.9em;
-    }/* Leaf bullet style */
-.section ul li {
-  list-style: none;
-  position: relative;
-  padding-left: 2em;
-  margin: 0.75em 0;
-  font-size: 1.1em;
-}
+    }
 
-.section ul li::before {
-  content: "";
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/3c/Leaf_icon.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 0;
-  top: 0.3em;
-  width: 1.2em;
-  height: 1.2em;
-}
+    /* Green bullet style */
+    .section ul li {
+      list-style: disc;
+      color: #4e9474;
+      margin: 0.75em 0;
+      font-size: 1.1em;
+    }
+    .section ul li::marker {
+      color: #4e9474;
+    }
 
-/* Remove bullets for resources list */
-.section ul.resources li::before {
-  content: none;
-}
+    /* No bullets on resource buttons */
+    .section ul.resources {
+      list-style: none;
+      padding-left: 0;
+    }
+    .section ul.resources li {
+      margin: 0.75em 0;
+    }
 
-/* Style for resource buttons */
-.section ul.resources li a {
-  display: inline-block;
-  background-color: #B1E3CC;
-  color: white;
-  padding: 0.75em 1.25em;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s, transform 0.2s;
-}
-.section ul.resources li a:hover {
-  background-color: #A0D8C1;
-  transform: scale(1.05);
-}
+    /* Resource buttons */
+    .section ul.resources li a {
+      display: inline-block;
+      background-color: #B1E3CC;
+      color: white;
+      padding: 0.75em 1.25em;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+    .section ul.resources li a:hover {
+      background-color: #A0D8C1;
+      transform: scale(1.05);
+    }
 
-.image-block img.lotus {
-  filter: brightness(1.1) contrast(0.9) opacity(0.85);
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  width: 100%;
-  max-width: 350px;
-  height: 420px;
-  object-fit: cover;
-  object-position: center;
-}
-.image-block img.quote-img {
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  max-width: 350px;
-  max-height: 440px;
-  object-fit: cover;
-}
-.image-block p.quote-text {
-  margin-top: 0.5em;
-  font-style: italic;
-  color: #555;
-  font-size: 1.1em;
-}
-
+    .image-block img.lotus {
+      filter: brightness(1.1) contrast(0.9) opacity(0.85);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 350px;
+      height: 420px;
+      object-fit: cover;
+      object-position: center;
+    }
+    .image-block img.quote-img {
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 350px;
+      max-height: 440px;
+      object-fit: cover;
+    }
+    .image-block p.quote-text {
+      margin-top: 0.5em;
+      font-style: italic;
+      color: #555;
+      font-size: 1.1em;
+    }
   </style>
 </head>
 <body>
@@ -155,10 +151,13 @@
       <a href="#contact">Contact</a>
     </nav>
   </header>
+
   <div class="hero">
     <h1>Welcome to Rao Counseling PLLC</h1>
     <p>Compassionate Support for Every Season of Life</p>
-  </div>  <section class="section" id="about">
+  </div>
+
+  <section class="section" id="about">
     <h2>About Charlie Rao, MS, LPC-A</h2>
     <p>Hi, I’m Charlie Rao, a Licensed Professional Counselor Associate based in Missouri City, TX. I specialize in helping adults, teens, and families—especially those from multicultural or South Asian backgrounds—navigate anxiety, depression, and bipolar disorder with warmth, understanding, and culturally informed care.</p>
     <div class="image-block">
@@ -168,7 +167,9 @@
         <span style="font-size: 0.95em; color: #666;">A reminder that growth often emerges from difficulty.</span>
       </p>
     </div>
-  </section>  <section class="section" id="services" style="background-color:#e9f7f0;">
+  </section>
+
+  <section class="section" id="services" style="background-color:#e9f7f0;">
     <h2>Services Offered</h2>
     <ul>
       <li>Individual Therapy for adults, teens, and seniors</li>
@@ -177,13 +178,19 @@
       <li>Support for Caregivers & Multigenerational Households</li>
     </ul>
     <p><strong>In-person & Virtual Telehealth Sessions Available</strong></p>
-  </section>  <section class="section" id="forms">
+  </section>
+
+  <section class="section" id="forms">
     <h2>Client Forms</h2>
     <p>Download and complete your intake or consent forms here.</p>
-  </section>  <section class="section" id="faqs" style="background-color:#e9f7f0;">
+  </section>
+
+  <section class="section" id="faqs" style="background-color:#e9f7f0;">
     <h2>Frequently Asked Questions</h2>
     <p>Answers to common questions about therapy, policies, and procedures.</p>
-  </section>  <section class="section" id="resources">
+  </section>
+
+  <section class="section" id="resources">
     <h2>Client Resources</h2>
     <p>Helpful links for clients:</p>
     <ul class="resources">
@@ -198,16 +205,22 @@
       <li><a href="https://insighttimer.com/" target="_blank">🧘 Insight Timer</a></li>
       <li><a href="https://howwefeel.org/" target="_blank">🧠 How We Feel App</a></li>
     </ul>
-  </section>  <section class="contact" id="contact">
+  </section>
+
+  <section class="contact" id="contact">
     <h2>Contact</h2>
     <p><strong>Email:</strong> <a href="mailto:raocounseling@gmail.com">raocounseling@gmail.com</a></p>
     <p><strong>Phone:</strong> <a href="tel:2812419990">281-241-9990</a></p>
     <p><em>Important: Please do not submit any personal health information via email. Email is not a secure or HIPAA-compliant communication method.</em></p>
-  </section>  <section class="section">
+  </section>
+
+  <section class="section">
     <div class="image-block">
       <img src="Screenshot_20190927-112703_Chrome.jpg" alt="Quote image showing grass being watered with message about self-care" class="quote-img">
     </div>
-  </section>  <footer class="footer">
+  </section>
+
+  <footer class="footer">
     <p>&copy; 2025 Rao Counseling PLLC. All rights reserved.</p>
   </footer>
 </body>
