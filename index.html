@@ -65,11 +65,7 @@
       text-align: center;
       margin-top: 2em;
     }
-    .contact {
-      background: #e9f7f0;
-      padding: 2em;
-      text-align: center;
-    }
+
     .footer {
       background: #a2d5c6;
       color: white;
@@ -78,49 +74,44 @@
       font-size: 0.9em;
     }
 
-    /* Green bullet style */
-    .section ul li {
+    /* Green bullet style for normal lists only */
+    .section ul:not(.resources) li {
       list-style: disc;
       color: #4e9474;
       margin: 0.75em 0;
       font-size: 1.1em;
     }
-    .section ul li::marker {
+    .section ul:not(.resources) li::marker {
       color: #4e9474;
     }
-/* No bullets on resource buttons */
-.section ul.resources {
-  list-style: none;
-  padding-left: 0;
-}
 
-/* Remove green leaf bullets from resource list items */
-.section ul.resources li::before {
-  content: none !important;
-}
-
-.section ul.resources li {
-  padding-left: 0 !important;
-  position: static !important;
-  margin: 0.75em 0;
-}
-
-/* Resource buttons */
-.section ul.resources li a {
-  display: inline-block;
-  background-color: #B1E3CC;
-  color: white;
-  padding: 0.75em 1.25em;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s, transform 0.2s;
-}
-
-.section ul.resources li a:hover {
-  background-color: #A0D8C1;
-  transform: scale(1.05);
-}
+    /* No bullets on resource buttons */
+    .section ul.resources {
+      list-style: none;
+      padding-left: 0;
+    }
+    .section ul.resources li::before {
+      content: none !important;
+    }
+    .section ul.resources li {
+      padding-left: 0 !important;
+      position: static !important;
+      margin: 0.75em 0;
+    }
+    .section ul.resources li a {
+      display: inline-block;
+      background-color: #B1E3CC;
+      color: white;
+      padding: 0.75em 1.25em;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+    .section ul.resources li a:hover {
+      background-color: #A0D8C1;
+      transform: scale(1.05);
+    }
 
     .image-block img.lotus {
       filter: brightness(1.1) contrast(0.9) opacity(0.85);
@@ -219,7 +210,20 @@
     <h2>Contact</h2>
     <p><strong>Email:</strong> <a href="mailto:raocounseling@gmail.com">raocounseling@gmail.com</a></p>
     <p><strong>Phone:</strong> <a href="tel:2812419990">281-241-9990</a></p>
-    <p><em>Important: Please do not submit any personal health information via email. Email is not a secure or HIPAA-compliant communication method.</em></p>
+    <p><em>Important: Please do not submit any personal health information via this form. It's for general inquiries only.</em></p>
+
+    <form action="https://formspree.io/f/myzwepyr" method="POST" style="margin-top: 2em; max-width: 500px; margin-left: auto; margin-right: auto;">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required style="width: 100%; padding: 0.5em;"><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required style="width: 100%; padding: 0.5em;"><br><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 0.5em;"></textarea><br><br>
+
+      <button type="submit" style="background-color: #a2d5c6; color: white; font-weight: bold; padding: 0.75em 1.25em; border: none; border-radius: 8px;">Send Message</button>
+    </form>
   </section>
 
   <section class="section">
