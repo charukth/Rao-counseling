@@ -252,25 +252,52 @@
   </section>
 
   <!-- FAQ Section -->
-  <section class="faq" id="faq">
-    <h2>Frequently Asked Questions</h2>
-    <div class="section">
-      <div>
-        <h3>What is therapy?</h3>
-        <p>Therapy is a process of exploring emotions and behaviors with a trained professional to improve mental health and well-being.</p>
-      </div>
+<section class="faq" id="faq">
+<h2>Frequently Asked Questions</h2>
+<div class="section">
+  <div>
+    <h3 class="faq-question">What is therapy?</h3>
+    <p class="faq-answer">Therapy is a process of exploring emotions and behaviors with a trained professional to improve mental health and well-being.</p>
+  </div>
 
-      <div>
-        <h3>What is counseling?</h3>
-        <p>Counseling is a supportive process that helps individuals overcome challenges, make decisions, or improve relationships through conversation.</p>
-      </div>
+  <div>
+    <h3 class="faq-question">What is counseling?</h3>
+    <p class="faq-answer">Counseling is a supportive process that helps individuals overcome challenges, make decisions, or improve relationships through conversation.</p>
+  </div>
 
-      <div>
-        <h3>How long will therapy last?</h3>
-        <p>Therapy length varies; it could range from a few sessions to long-term depending on individual needs and goals.</p>
-      </div>
-    </div>
-  </section>
+  <div>
+    <h3 class="faq-question">How long will therapy last?</h3>
+    <p class="faq-answer">Therapy length varies; it could range from a few sessions to long-term depending on individual needs and goals.</p>
+  </div>
+</div>
+
+<script>
+  // Ensure that each FAQ question can toggle its corresponding answer
+  document.querySelectorAll('.faq-question').forEach((header) => {
+    header.addEventListener('click', function() {
+      const p = this.nextElementSibling; // Selects the <p> under the <h3>
+      p.style.display = p.style.display === 'block' ? 'none' : 'block'; // Toggles visibility
+    });
+  });
+
+  // Optionally hide all answers initially when the page loads
+  document.querySelectorAll('.faq-answer').forEach((answer) => {
+    answer.style.display = 'none'; // Hides answers initially
+  });
+</script>
+  // This ensures all FAQ items toggle visibility properly, including the first one.
+  document.querySelectorAll('.faq-question').forEach((header) => {
+    header.addEventListener('click', function() {
+      const p = this.nextElementSibling; // Selects the <p> under the <h3>
+      p.style.display = p.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+
+  // Optionally, you can ensure the answers are initially hidden, even if the page is reloaded
+  document.querySelectorAll('.faq-answer').forEach((answer) => {
+    answer.style.display = 'none'; // This hides all answers initially
+  });
+</script>
 
   <!-- Contact Section -->
   <section class="contact-form" id="contact">
