@@ -15,7 +15,7 @@
       color: #333;
     }
     header {
-      background: #8F4E28;
+      background: #E4C6A1; /* Updated to a lighter clay tile shade */
       padding: 1.5em;
       text-align: center;
       color: #fff;
@@ -68,7 +68,7 @@
     }
 
     .footer {
-      background: #8F4E28;
+      background: #E4C6A1;
       color: white;
       text-align: center;
       padding: 1em;
@@ -183,8 +183,34 @@
 
     .faq div p {
       margin-bottom: 1.5em;
+      display: none;
     }
 
+    .faq div h3 {
+      cursor: pointer;
+      color: #4e9474;
+      padding: 1em;
+      background-color: #E4C6A1;
+      margin: 1em 0;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    .faq div h3:hover {
+      background-color: #b79b75;
+    }
+
+    .contact-form {
+      padding: 3em 2em;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .contact-form h2 {
+      color: #4e9474;
+      text-align: center;
+      margin-bottom: 2em;
+    }
   </style>
 </head>
 <body>
@@ -201,89 +227,79 @@
     <a href="#contact">Contact</a>
   </nav>
 
-  <section class="hero">
-    <h1>Welcome to Rao Counseling PLLC</h1>
-    <p>Empowering you to live your best life.</p>
-  </section>
-
   <section class="faq" id="faq">
     <h2>Frequently Asked Questions</h2>
     <div class="section">
-      <h3>What is therapy?</h3>
-      <p>Therapy is a process of exploring emotions and behaviors with a trained professional to improve mental health and well-being.</p>
+      <div>
+        <h3>What is therapy?</h3>
+        <p>Therapy is a process of exploring emotions and behaviors with a trained professional to improve mental health and well-being.</p>
+      </div>
 
-      <h3>What is counseling?</h3>
-      <p>Counseling is a supportive process that helps individuals overcome challenges, make decisions, or improve relationships through conversation.</p>
+      <div>
+        <h3>What is counseling?</h3>
+        <p>Counseling is a supportive process that helps individuals overcome challenges, make decisions, or improve relationships through conversation.</p>
+      </div>
 
-      <h3>How long will therapy last?</h3>
-      <p>Therapy length varies; it could range from a few sessions to long-term depending on individual needs and goals.</p>
+      <div>
+        <h3>How long will therapy last?</h3>
+        <p>Therapy length varies; it could range from a few sessions to long-term depending on individual needs and goals.</p>
+      </div>
 
-      <h3>What is your fee rate?</h3>
-      <p>Initial session: $150 for 90 minutes. Ongoing sessions: $100 for 1 hour. Sliding scale is available.</p>
+      <div>
+        <h3>What is your fee rate?</h3>
+        <p>Initial session: $150 for 90 minutes. Ongoing sessions: $100 for 1 hour. Sliding scale is available.</p>
+      </div>
 
-      <h3>What if I feel stuck or not making progress?</h3>
-      <p>It's important to discuss these feelings with your therapist to adjust goals or methods to better fit your needs.</p>
+      <div>
+        <h3>What if I feel stuck or not making progress?</h3>
+        <p>It's important to discuss these feelings with your therapist to adjust goals or methods to better fit your needs.</p>
+      </div>
 
-      <h3>Is therapy confidential?</h3>
-      <p>Yes, therapy is confidential, with some exceptions like risk of harm to yourself or others.</p>
+      <div>
+        <h3>Is therapy confidential?</h3>
+        <p>Yes, therapy is confidential, with some exceptions like risk of harm to yourself or others.</p>
+      </div>
 
-      <h3>Can I contact you between sessions?</h3>
-      <p>You can contact me for brief check-ins or urgent matters, but it's important to respect boundaries outside of scheduled sessions.</p>
+      <div>
+        <h3>Can I contact you between sessions?</h3>
+        <p>You can contact me for brief check-ins or urgent matters, but it's important to respect boundaries outside of scheduled sessions.</p>
+      </div>
 
-      <h3>How many sessions will I need?</h3>
-      <p>The number of sessions depends on your goals and progress. We can assess together as we go along.</p>
+      <div>
+        <h3>How many sessions will I need?</h3>
+        <p>The number of sessions depends on your goals and progress. We can assess together as we go along.</p>
+      </div>
     </div>
   </section>
 
-  <section class="forms" id="forms">
-    <h2>Forms</h2>
-    <div class="section">
-      <p>Please complete the following forms before your first session:</p>
-      <ul>
-        <li><a href="#">Client Intake Form</a></li>
-        <li><a href="#">Consent to Treatment Form</a></li>
-        <li><a href="#">Privacy Practices Notice</a></li>
-      </ul>
-    </div>
+  <!-- Contact Section -->
+  <section class="contact-form" id="contact">
+    <h2>Contact Me</h2>
+    <form action="#" method="post">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="5" required placeholder="Enter your message here"></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
   </section>
 
-  <section class="resources" id="resources">
-    <h2>Resources</h2>
-    <div class="section">
-      <ul class="resources">
-        <li><a href="#">Mental Health Support Hotlines</a></li>
-        <li><a href="#">Local Support Groups</a></li>
-        <li><a href="#">Self-Care Resources</a></li>
-      </ul>
-    </div>
-  </section>
+  <script>
+    // JavaScript for FAQ dropdown
+    const faqItems = document.querySelectorAll('.faq div');
 
-  <section class="contact" id="contact">
-    <h2>Contact</h2>
-    <div style="max-width: 400px; margin: 0 auto; text-align: center;">
-      <p><strong>Email:</strong> <a href="mailto:raocounseling@gmail.com">raocounseling@gmail.com</a></p>
-      <p><strong>Phone:</strong> <a href="tel:2812419990">281-241-9990</a></p>
-      <p><em>Important: Please do not submit any personal health information via this form. It's for general inquiries only.</em></p>
-
-      <form action="https://formspree.io/f/myzwepyr" method="POST" style="margin-top: 2em;">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required><br>
-
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br>
-
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="5" required></textarea><br>
-
-        <div style="text-align: center;">
-          <button type="submit">Send Message</button>
-        </div>
-      </form>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <p>&copy; 2025 Rao Counseling PLLC. All rights reserved.</p>
-  </footer>
+    faqItems.forEach(item => {
+      const question = item.querySelector('h3');
+      question.addEventListener('click', () => {
+        const answer = item.querySelector('p');
+        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+  </script>
 </body>
 </html>
