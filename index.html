@@ -285,19 +285,6 @@
     answer.style.display = 'none'; // Hides answers initially
   });
 </script>
-  // This ensures all FAQ items toggle visibility properly, including the first one.
-  document.querySelectorAll('.faq-question').forEach((header) => {
-    header.addEventListener('click', function() {
-      const p = this.nextElementSibling; // Selects the <p> under the <h3>
-      p.style.display = p.style.display === 'block' ? 'none' : 'block';
-    });
-  });
-
-  // Optionally, you can ensure the answers are initially hidden, even if the page is reloaded
-  document.querySelectorAll('.faq-answer').forEach((answer) => {
-    answer.style.display = 'none'; // This hides all answers initially
-  });
-</script>
 
   <!-- Contact Section -->
   <section class="contact-form" id="contact">
@@ -319,14 +306,5 @@
   <footer class="footer">
     <p>&copy; 2025 Rao Counseling PLLC. All rights reserved.</p>
   </footer>
-
-  <script>
-    document.querySelectorAll('.faq div h3').forEach((header) => {
-      header.addEventListener('click', function() {
-        const p = this.nextElementSibling;
-        p.style.display = p.style.display === 'block' ? 'none' : 'block';
-      });
-    });
-  </script>
 </body>
 </html>
