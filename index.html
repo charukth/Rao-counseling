@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#a2d5c6" />
+  <meta name="theme-color" content="#8F4E28" />
   <title>Rao Counseling PLLC</title>
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
   <style>
@@ -15,7 +15,7 @@
       color: #333;
     }
     header {
-      background: #a2d5c6;
+      background: #8F4E28;
       padding: 1.5em;
       text-align: center;
       color: #fff;
@@ -26,6 +26,7 @@
       flex-wrap: wrap;
       gap: 0.5em;
       padding: 0.5em;
+      background: #4e9474;
     }
     nav a {
       background-color: rgba(0, 0, 0, 0.2);
@@ -67,7 +68,7 @@
     }
 
     .footer {
-      background: #a2d5c6;
+      background: #8F4E28;
       color: white;
       text-align: center;
       padding: 1em;
@@ -159,12 +160,12 @@
     input[type="text"]:focus,
     input[type="email"]:focus,
     textarea:focus {
-      border-color: #a2d5c6;
+      border-color: #8F4E28;
       outline: none;
     }
 
     button[type="submit"] {
-      background-color: #a2d5c6;
+      background-color: #8F4E28;
       color: white;
       font-weight: bold;
       padding: 0.75em 1.25em;
@@ -176,9 +177,14 @@
     }
 
     button[type="submit"]:hover {
-      background-color: #91cdb8;
+      background-color: #7c4e29;
       transform: translateY(-2px);
     }
+
+    .faq div p {
+      margin-bottom: 1.5em;
+    }
+
   </style>
 </head>
 <body>
@@ -189,8 +195,10 @@
   <nav>
     <a href="#about">About</a>
     <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
     <a href="#faq">FAQs</a>
+    <a href="#forms">Forms</a>
+    <a href="#resources">Resources</a>
+    <a href="#contact">Contact</a>
   </nav>
 
   <section class="hero">
@@ -227,6 +235,29 @@
     </div>
   </section>
 
+  <section class="forms" id="forms">
+    <h2>Forms</h2>
+    <div class="section">
+      <p>Please complete the following forms before your first session:</p>
+      <ul>
+        <li><a href="#">Client Intake Form</a></li>
+        <li><a href="#">Consent to Treatment Form</a></li>
+        <li><a href="#">Privacy Practices Notice</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="resources" id="resources">
+    <h2>Resources</h2>
+    <div class="section">
+      <ul class="resources">
+        <li><a href="#">Mental Health Support Hotlines</a></li>
+        <li><a href="#">Local Support Groups</a></li>
+        <li><a href="#">Self-Care Resources</a></li>
+      </ul>
+    </div>
+  </section>
+
   <section class="contact" id="contact">
     <h2>Contact</h2>
     <div style="max-width: 400px; margin: 0 auto; text-align: center;">
@@ -254,6 +285,5 @@
   <footer class="footer">
     <p>&copy; 2025 Rao Counseling PLLC. All rights reserved.</p>
   </footer>
-
 </body>
 </html>
