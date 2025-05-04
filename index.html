@@ -339,15 +339,21 @@
 
   <script>
     // JavaScript for FAQ dropdown
-    const faqItems = document.querySelectorAll('.faq div');
+const faqItems = document.querySelectorAll('.faq div');
 
-    faqItems.forEach(item => {
-      const question = item.querySelector('h3');
-      question.addEventListener('click', () => {
-        const answer = item.querySelector('p');
-        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
-      });
-    });
+faqItems.forEach(item => {
+  const question = item.querySelector('h3');
+  const answer = item.querySelector('p');
+
+  question.addEventListener('click', () => {
+    // Toggle the display of the answer
+    if (answer.style.display === 'none' || answer.style.display === '') {
+      answer.style.display = 'block'; // Show the answer
+    } else {
+      answer.style.display = 'none'; // Hide the answer
+    }
+  });
+});
   </script>
 </body>
 </html>
