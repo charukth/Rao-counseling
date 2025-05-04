@@ -184,7 +184,7 @@
     /* FAQ - Initially hidden answers */
     .faq div p {
       margin-bottom: 1.5em;
-      display: none;
+      display: none; /* Hide answers by default */
     }
 
     .faq div h3 {
@@ -269,91 +269,37 @@
         <h3>How long will therapy last?</h3>
         <p>Therapy length varies; it could range from a few sessions to long-term depending on individual needs and goals.</p>
       </div>
-
-      <div>
-        <h3>What is your fee rate?</h3>
-        <p>Initial session: $150 for 90 minutes. Ongoing sessions: $100 for 1 hour. Sliding scale is available.</p>
-      </div>
-
-      <div>
-        <h3>What if I feel stuck or not making progress?</h3>
-        <p>It's important to discuss these feelings with your therapist to adjust goals or methods to better fit your needs.</p>
-      </div>
-
-      <div>
-        <h3>Is therapy confidential?</h3>
-        <p>Yes, therapy is confidential, with some exceptions like risk of harm to yourself or others.</p>
-      </div>
-
-      <div>
-        <h3>Can I contact you between sessions?</h3>
-        <p>You can contact me for brief check-ins or urgent matters, but it's important to respect boundaries outside of scheduled sessions.</p>
-      </div>
-
-      <div>
-        <h3>How many sessions will I need?</h3>
-        <p>The number of sessions depends on your goals and progress. We can assess together as we go along.</p>
-      </div>
     </div>
   </section>
 
-  <!-- Forms Section -->
-  <section class="section" id="forms">
-    <h2>Forms</h2>
-    <ul class="resources">
-      <li><a href="https://api.portal.therapyappointment.com/n/public/findYourTherapist/A6BAEF410F874F5B95522ED7EFAA8372">How to Schedule & HIPAA-Compliant Message Me</a></li>
-      <li><a href="https://doxy.me/charlierao">Virtual Telehealth Link (No need to download or pay, just click)</a></li>
-    </ul>
-  </section>
-
-  <!-- Resources Section -->
-  <section class="section" id="resources">
-    <h2>Resources</h2>
-    <ul class="resources">
-      <li><a href="https://quietkit.com/box-breathing/">Box Breathing: Navy SEALs Use This Technique to De-Stress Quickly</a></li>
-      <li><a href="https://insighttimer.com/">Insight Timer: Free Guided Meditations & Mindfulness Talks</a></li>
-      <li><a href="https://howwefeel.org/">How We Feel: A Free Mental Health Journal & Mood Tracker</a></li>
-    </ul>
-  </section>
-
-  <!-- Contact Form Section -->
+  <!-- Contact Section -->
   <section class="contact-form" id="contact">
     <h2>Contact Me</h2>
     <form action="#" method="post">
       <label for="name">Your Name</label>
-      <input type="text" id="name" name="name" required placeholder="Enter your name">
+      <input type="text" id="name" name="name" placeholder="Enter your name" required />
 
       <label for="email">Your Email</label>
-      <input type="email" id="email" name="email" required placeholder="Enter your email">
+      <input type="email" id="email" name="email" placeholder="Enter your email" required />
 
       <label for="message">Your Message</label>
-      <textarea id="message" name="message" rows="5" required placeholder="Enter your message here"></textarea>
+      <textarea id="message" name="message" rows="4" placeholder="Write your message" required></textarea>
 
       <button type="submit">Send Message</button>
     </form>
   </section>
 
   <footer class="footer">
-    <p>© 2025 Rao Counseling PLLC | All Rights Reserved</p>
+    <p>&copy; 2025 Rao Counseling PLLC. All rights reserved.</p>
   </footer>
 
   <script>
-    // JavaScript for FAQ dropdown
-const faqItems = document.querySelectorAll('.faq div');
-
-faqItems.forEach(item => {
-  const question = item.querySelector('h3');
-  const answer = item.querySelector('p');
-
-  question.addEventListener('click', () => {
-    // Toggle the display of the answer
-    if (answer.style.display === 'none' || answer.style.display === '') {
-      answer.style.display = 'block'; // Show the answer
-    } else {
-      answer.style.display = 'none'; // Hide the answer
-    }
-  });
-});
+    document.querySelectorAll('.faq div h3').forEach((header) => {
+      header.addEventListener('click', function() {
+        const p = this.nextElementSibling;
+        p.style.display = p.style.display === 'block' ? 'none' : 'block';
+      });
+    });
   </script>
 </body>
 </html>
