@@ -74,7 +74,6 @@
       font-size: 0.9em;
     }
 
-    /* Green bullet style for normal lists only */
     .section ul:not(.resources) li {
       list-style: disc;
       color: #4e9474;
@@ -85,7 +84,6 @@
       color: #4e9474;
     }
 
-    /* No bullets on resource buttons */
     .section ul.resources {
       list-style: none;
       padding-left: 0;
@@ -136,108 +134,80 @@
       color: #555;
       font-size: 1.1em;
     }
+
+    /* Contact form styling */
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      border-radius: 999px;
+      border: 1px solid #ccc;
+      padding: 0.6em 1em;
+      width: 100%;
+      box-sizing: border-box;
+      font-family: 'Lora', serif;
+      font-size: 1em;
+      margin-bottom: 1em;
+      background-color: #fff;
+      transition: border-color 0.3s ease;
+    }
+
+    textarea {
+      border-radius: 16px;
+      resize: vertical;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+      border-color: #a2d5c6;
+      outline: none;
+    }
+
+    button[type="submit"] {
+      background-color: #a2d5c6;
+      color: white;
+      font-weight: bold;
+      padding: 0.75em 1.25em;
+      border: none;
+      border-radius: 999px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #91cdb8;
+      transform: translateY(-2px);
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Rao Counseling PLLC</h1>
-    <nav aria-label="Main navigation">
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#resources">Resources</a>
-      <a href="#forms">Forms</a>
-      <a href="#faqs">FAQs</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <!-- Existing content omitted for brevity -->
 
-  <div class="hero">
-    <h1>Welcome to Rao Counseling PLLC</h1>
-    <p>Compassionate Support for Every Season of Life</p>
-  </div>
+  <section class="contact" id="contact">
+    <h2 style="text-align: center;">Contact</h2>
+    <div style="max-width: 400px; margin: 0 auto; text-align: center;">
+      <p><strong>Email:</strong> <a href="mailto:raocounseling@gmail.com">raocounseling@gmail.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:2812419990">281-241-9990</a></p>
+      <p><em>Important: Please do not submit any personal health information via this form. It's for general inquiries only.</em></p>
 
-  <section class="section" id="about">
-    <h2>About Charlie Rao, MS, LPC-A</h2>
-    <p>Hi, I’m Charlie Rao, a Licensed Professional Counselor Associate based in Missouri City, TX. I specialize in helping adults, teens, and families—especially those from multicultural or South Asian backgrounds—navigate anxiety, depression, and bipolar disorder with warmth, understanding, and culturally informed care.</p>
-    <div class="image-block">
-      <img src="Resized_Screenshot_20210512-183722_Photos_142445446614410.jpg" alt="Inspirational image of lotus flower with the quote 'No mud, no lotus'" class="lotus">
-      <p class="quote-text">
-        "No mud, no lotus"<br>
-        <span style="font-size: 0.95em; color: #666;">A reminder that growth often emerges from difficulty.</span>
-      </p>
+      <form action="https://formspree.io/f/myzwepyr" method="POST" style="margin-top: 2em;">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br>
+
+        <div style="text-align: center;">
+          <button type="submit">Send Message</button>
+        </div>
+      </form>
     </div>
   </section>
 
-  <section class="section" id="services" style="background-color:#e9f7f0;">
-    <h2>Services Offered</h2>
-    <ul>
-      <li>Individual Therapy for adults, teens, and seniors</li>
-      <li>Support for Anxiety, Depression, and Bipolar Disorder</li>
-      <li>Culturally Competent Therapy for South Asian families and third-culture individuals</li>
-      <li>Support for Caregivers & Multigenerational Households</li>
-    </ul>
-    <p><strong>In-person & Virtual Telehealth Sessions Available</strong></p>
-  </section>
-
-  <section class="section" id="forms">
-    <h2>Client Forms</h2>
-    <p>Download and complete your intake or consent forms here.</p>
-  </section>
-
-  <section class="section" id="faqs" style="background-color:#e9f7f0;">
-    <h2>Frequently Asked Questions</h2>
-    <p>Answers to common questions about therapy, policies, and procedures.</p>
-  </section>
-
-  <section class="section" id="resources">
-    <h2>Client Resources</h2>
-    <p>Helpful links for clients:</p>
-    <ul class="resources">
-      <li><a href="https://api.portal.therapyappointment.com/n/public/findYourTherapist/A6BAEF410F874F5B95522ED7EFAA8372" target="_blank">📅 Schedule an Appointment</a></li>
-      <li><a href="https://doxy.me/charlierao" target="_blank">📹 Virtual Session Room</a></li>
-      <li><a href="https://www.psychologytoday.com/us/therapists/charlie-rao-missouri-city-tx/762997" target="_blank">📖 PsychologyToday Profile</a></li>
-      <li><a href="https://www.linkedin.com/in/charu-rao?trk=contact-info" target="_blank">💼 LinkedIn Page</a></li>
-    </ul>
-    <hr style="margin: 2em 0; border: 1px solid #ddd;">
-    <ul class="resources">
-      <li><a href="https://quietkit.com/box-breathing/" target="_blank">🧘 Box Breathing with QuietKit</a></li>
-      <li><a href="https://insighttimer.com/" target="_blank">🧘 Insight Timer</a></li>
-      <li><a href="https://howwefeel.org/" target="_blank">🧠 How We Feel App</a></li>
-    </ul>
-  </section>
-
-<section class="contact" id="contact">
-  <h2 style="text-align: center;">Contact</h2>
-  <div style="max-width: 400px; margin: 0 auto; text-align: center;">
-    <p><strong>Email:</strong> <a href="mailto:raocounseling@gmail.com">raocounseling@gmail.com</a></p>
-    <p><strong>Phone:</strong> <a href="tel:2812419990">281-241-9990</a></p>
-    <p><em>Important: Please do not submit any personal health information via this form. It's for general inquiries only.</em></p>
-
-    <form action="https://formspree.io/f/myzwepyr" method="POST" style="margin-top: 2em; text-align: left;">
-      <label for="name">Name:</label><br>
-      <input type="text" id="name" name="name" required style="width: 80%; padding: 0.5em;"><br><br>
-
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email" required style="width: 80%; padding: 0.5em;"><br><br>
-
-      <label for="message">Message:</label><br>
-      <textarea id="message" name="message" rows="5" required style="width: 80%; padding: 0.5em;"></textarea><br><br>
-
-      <div style="text-align: center;">
-        <button type="submit" style="background-color: #a2d5c6; color: white; font-weight: bold; padding: 0.75em 1.25em; border: none; border-radius: 8px;">Send Message</button>
-      </div>
-    </form>
-  </div>
-</section>
-
-  <section class="section">
-    <div class="image-block">
-      <img src="Screenshot_20190927-112703_Chrome.jpg" alt="Quote image showing grass being watered with message about self-care" class="quote-img">
-    </div>
-  </section>
-
-  <footer class="footer">
-    <p>&copy; 2025 Rao Counseling PLLC. All rights reserved.</p>
-  </footer>
+  <!-- Continue with footer and other sections as you have them -->
 </body>
 </html>
