@@ -7,212 +7,216 @@
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      margin: 0;
       font-family: 'Lora', serif;
-      background: #fdfdfb;
-      color: #2e4735;
+      margin: 0;
+      background-color: #fdfdfb;
+      color: #2d4d41;
     }
     header {
-      background: #a8d5ba;
-      padding: 2em 1em;
-      text-align: center;
+      background-color: #a8d5ba;
       color: #fff;
+      padding: 2rem;
+      text-align: center;
     }
     nav {
+      background: #6ba583;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 0.5em;
-      padding: 1em;
-      background: #6ba583;
+      gap: 0.75rem;
+      padding: 1rem;
     }
     nav a {
       background-color: #4e9474;
       color: white;
-      text-decoration: none;
-      padding: 0.5em 1em;
+      padding: 0.6rem 1.2rem;
       border-radius: 999px;
+      text-decoration: none;
       font-weight: bold;
+      transition: background-color 0.3s;
     }
-    .hero {
-      background: url('https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?auto=format&fit=crop&w=1500&q=80') no-repeat center;
-      background-size: cover;
-      color: white;
-      text-align: center;
-      padding: 6em 2em;
+    nav a:hover {
+      background-color: #3e7c60;
     }
     section {
-      padding: 3em 1.5em;
-      max-width: 900px;
+      padding: 2rem;
+      max-width: 960px;
       margin: auto;
     }
-    section:nth-of-type(even) {
+    .section-divider {
+      height: 3rem;
+    }
+    .photo-container {
+      max-width: 600px;
+      margin: 2rem auto;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .photo-container img {
+      width: 100%;
+      border-radius: 20px;
+    }
+    .caption {
+      text-align: center;
+      font-style: italic;
+      padding: 0.75rem;
       background-color: #f4f9f6;
+      color: #2d4d41;
     }
     h2 {
       color: #4e9474;
       text-align: center;
     }
-    .image-block {
-      text-align: center;
-      margin-top: 2em;
-    }
-    .image-block img {
-      max-width: 350px;
-      width: 100%;
-      border-radius: 16px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-    .image-block p {
-      margin-top: 0.5em;
-      font-style: italic;
-      color: #555;
-    }
-    ul.services-list {
-      columns: 2;
-      list-style: none;
-      padding: 0;
-    }
-    ul.services-list li::before {
-      content: '\203A';
-      color: #4e9474;
-      font-weight: bold;
-      margin-right: 0.5em;
-    }
-    details {
-      background: #e8f5ee;
-      padding: 1em;
-      border-radius: 12px;
-      margin: 1em 0;
+    .faq summary {
+      background-color: #d0eadf;
+      color: #2d4d41;
+      border-radius: 999px;
+      padding: 1rem;
       cursor: pointer;
-    }
-    summary {
-      font-weight: bold;
-      color: #4e9474;
+      margin-bottom: 0.5rem;
       list-style: none;
+      position: relative;
     }
-    summary::-webkit-details-marker {
-      display: none;
+    .faq summary::after {
+      content: "➤";
+      position: absolute;
+      right: 1.5rem;
+      transform: rotate(90deg);
+    }
+    .faq details[open] summary::after {
+      transform: rotate(270deg);
+    }
+    .faq p {
+      background-color: #f0f8f4;
+      border-radius: 16px;
+      padding: 1rem;
+      margin-top: 0;
+      margin-bottom: 2rem;
     }
     .resources-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 1em;
-      margin-top: 1em;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
     }
     .resource-button {
-      display: block;
-      background-color: #4e9474;
+      background-color: #6ba583;
       color: white;
-      padding: 1em;
       text-decoration: none;
+      padding: 1rem;
       border-radius: 999px;
       text-align: center;
-      font-weight: bold;
+      transition: background-color 0.3s ease;
     }
-    .contact-form input,
-    .contact-form textarea {
+    .resource-button:hover {
+      background-color: #5a9473;
+    }
+    form input, form textarea {
       width: 100%;
-      padding: 1em;
-      margin-bottom: 1em;
+      padding: 0.75rem;
       border-radius: 999px;
       border: 1px solid #ccc;
+      margin-bottom: 1rem;
       font-family: 'Lora', serif;
     }
-    .contact-form textarea {
+    form textarea {
       border-radius: 16px;
-      resize: vertical;
     }
-    .contact-form button {
+    form button {
       background-color: #4e9474;
       color: white;
       font-weight: bold;
-      padding: 0.75em 1.5em;
       border: none;
+      padding: 0.75rem 1.5rem;
       border-radius: 999px;
       cursor: pointer;
     }
+    form button:hover {
+      background-color: #3c7d61;
+    }
     footer {
+      background-color: #f1ede8;
+      color: #555;
+      padding: 2rem;
       text-align: center;
-      padding: 2em;
-      background: #a8d5ba;
-      color: white;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Rao Counseling PLLC</h1>
-  </header>  <nav>
+    <p>Your journey toward clarity and healing begins here.</p>
+  </header>
+  <nav>
     <a href="#about">About</a>
     <a href="#services">Services</a>
     <a href="#faq">FAQs</a>
     <a href="#forms">Forms</a>
     <a href="#resources">Resources</a>
     <a href="#contact">Contact</a>
-  </nav>  <section class="hero">
-    <h1>Welcome to Rao Counseling</h1>
-    <p>Your journey toward clarity and healing begins here.</p>
-  </section>  <section id="about">
+  </nav>  <section id="about">
     <h2>About Me</h2>
-    <p>Hi, I'm Charlie Rao, a licensed therapist offering a warm, client-centered approach to emotional wellness. I work with individuals across various backgrounds to navigate life transitions, anxiety, depression, and more.</p>
-    <div class="image-block">
-      <img src="https://raw.githubusercontent.com/charukth/Rao-counseling/main/Resized_Screenshot_20210512-183722_Photos_142445446614410.jpg" alt="Lotus Image" />
-      <p>"No mud, no lotus." — Growth emerges through struggle.</p>
-    </div>
-  </section>  <section id="services">
-    <h2>Services</h2>
-    <ul class="services-list">
-      <li>Senior Citizens & Caregivers</li>
-      <li>Multicultural / Multigenerational Households</li>
-      <li>Young Adults / Teens</li>
-      <li>South Asian Backgrounds</li>
+    <p>I’m Charlie Rao, a licensed therapist dedicated to helping individuals navigate life's challenges. I create a safe, nonjudgmental space where you can explore emotions, set goals, and work through life transitions at your own pace.</p>
+  </section>  <section class="photo-container">
+    <img src="https://raw.githubusercontent.com/charukth/Rao-counseling/main/Resized_Screenshot_20210512-183722_Photos_142445446614410.jpg" alt="No mud, no lotus" style="object-fit: cover; height: 400px;" />
+    <div class="caption">A reminder that growth often comes from discomfort.</div>
+  </section>  <section class="section" id="services" style="background-color:#f4f9f6;">
+    <h2>Who I Help</h2>
+    <ul>
+      <li>Senior citizens & caregivers</li>
+      <li>Multicultural / Multigenerational households</li>
+      <li>Teens and adults navigating life transitions</li>
+      <li>Individuals from South Asian backgrounds</li>
+      <li>Clients living with anxiety, depression, or bipolar disorder</li>
     </ul>
-  </section>  <section id="faq">
-    <h2>FAQs</h2>
-    <details><summary>What is therapy?</summary><p>Therapy is a collaborative process to explore emotions and patterns with a licensed professional for healing and growth.</p></details>
-    <details><summary>What is counseling?</summary><p>A focused conversation aimed at resolving specific concerns and reaching goals in a supportive space.</p></details>
-    <details><summary>How long will therapy last?</summary><p>That varies — we’ll adjust based on your needs and progress.</p></details>
-    <details><summary>What is your fee rate?</summary><p>$150 for a 90-min initial session; $100 for 1-hour follow-ups. Sliding scale available.</p></details>
-    <details><summary>What if I feel stuck or not making progress?</summary><p>We'll discuss and reassess your goals together.</p></details>
-    <details><summary>Is therapy confidential?</summary><p>Yes — your information is protected, with a few legal exceptions (e.g., safety risks).</p></details>
-    <details><summary>Can I contact you between sessions?</summary><p>Yes — for scheduling or quick check-ins via the secure portal.</p></details>
+  </section>  <section id="faq" class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <details><summary>What is therapy?</summary><p>Therapy is a process of exploring your inner world with a trained professional to gain clarity, manage symptoms, and grow.</p></details>
+    <details><summary>What is counseling?</summary><p>Counseling typically focuses on resolving specific concerns through supportive conversation and guidance.</p></details>
+    <details><summary>How long will therapy last?</summary><p>It depends — some clients benefit from short-term work, while others prefer ongoing support.</p></details>
+    <details><summary>What is your fee rate?</summary><p>Initial session is $150 for 90 minutes. Follow-ups are $100 for 60 minutes. Sliding scale is available.</p></details>
+    <details><summary>What if I feel stuck or not making progress?</summary><p>We’ll check in and adjust goals together — therapy is flexible and collaborative.</p></details>
+    <details><summary>Is therapy confidential?</summary><p>Yes, with legal exceptions for safety concerns. Your privacy is respected.</p></details>
+    <details><summary>Can I contact you between sessions?</summary><p>Yes — for scheduling or quick messages via my secure portal.</p></details>
   </section>  <section id="forms">
     <h2>Client Forms</h2>
     <div class="resources-grid">
-      <a href="/forms/intake.pdf" class="resource-button">New Client Intake Form</a>
+      <a href="/forms/intake.pdf" class="resource-button">Intake Form (PDF)</a>
       <a href="/forms/consent.pdf" class="resource-button">Consent to Treat</a>
-      <a href="/forms/hipaa.pdf" class="resource-button">HIPAA Privacy Notice</a>
+      <a href="/forms/hipaa.pdf" class="resource-button">Privacy Practices</a>
     </div>
-  </section>  <section id="resources">
-    <h2>Resources</h2>
+  </section>  <section id="resources" style="background-color:#f4f9f6;">
+    <h2>Client Resources</h2>
     <div class="resources-grid">
-      <a href="https://api.portal.therapyappointment.com/n/public/findYourTherapist/A6BAEF410F874F5B95522ED7EFAA8372" class="resource-button">📅 Schedule & Secure Message</a>
-      <a href="https://doxy.me/charlierao" class="resource-button">📹 Telehealth Room</a>
+      <a href="https://api.portal.therapyappointment.com/n/public/findYourTherapist/A6BAEF410F874F5B95522ED7EFAA8372" class="resource-button">📅 TherapyAppointment: schedule or message</a>
+      <a href="https://doxy.me/charlierao" class="resource-button">📹 Doxy.me: virtual telehealth</a>
     </div>
-    <h3 style="margin-top:2rem">Self-Care Tools</h3>
+    <h3 style="margin-top: 2rem">Self-Care Tools</h3>
     <div class="resources-grid">
-      <a href="https://quietkit.com" class="resource-button">🧘 QuietKit - Navy SEALs Breathing</a>
-      <a href="https://insighttimer.com" class="resource-button">🎧 Insight Timer - Free Meditations</a>
-      <a href="https://howwefeel.org" class="resource-button">📓 How We Feel - Mood Tracker</a>
+      <a href="https://quietkit.com/box-breathing/" class="resource-button">🧘 QuietKit: Navy SEALs breathing tool</a>
+      <a href="https://insighttimer.com/" class="resource-button">🧘 Insight Timer: free meditations</a>
+      <a href="https://howwefeel.org/" class="resource-button">🧠 How We Feel: emotion tracking app</a>
     </div>
-  </section>  <section id="contact" class="contact-form">
+  </section>  <section id="contact">
     <h2>Contact Me</h2>
-    <p style="text-align: center;"><em>Please do not include personal health information. This form is not HIPAA-compliant.</em></p>
     <form action="https://formspree.io/f/myzwepyr" method="POST">
       <label for="name">Your Name</label>
-      <input type="text" id="name" name="name" required /><label for="email">Your Email</label>
-  <input type="email" id="email" name="email" required />
+      <input type="text" id="name" name="name" placeholder="Enter your name" required /><label for="email">Your Email</label>
+  <input type="email" id="email" name="email" placeholder="Enter your email" required />
 
   <label for="message">Your Message</label>
-  <textarea id="message" name="message" rows="4" required></textarea>
+  <textarea id="message" name="message" rows="4" placeholder="Write your message" required></textarea>
 
-  <button type="submit">Send Message</button>
+  <p style="font-size: 0.9em; color: #666; text-align:center; margin-bottom: 1rem;">Please don’t include personal health information (PHI) — this form is not HIPAA-secure.</p>
+
+  <div style="text-align:center">
+    <button type="submit">Send Message</button>
+  </div>
 </form>
 
-  </section>  <section class="image-block">
-    <img src="https://raw.githubusercontent.com/charukth/Rao-counseling/main/Screenshot_20190927-112703_Chrome.jpg" alt="Grass isn't greener quote">
-    <p>The grass isn't greener — it's where you water it.</p>
+  </section>  <section class="photo-container">
+    <img src="https://raw.githubusercontent.com/charukth/Rao-counseling/main/Screenshot_20190927-112703_Chrome.jpg" alt="Self-care reminder" />
+    <div class="caption">The grass isn’t greener — it’s where you water it.</div>
   </section>  <footer>
     <p>&copy; 2025 Rao Counseling PLLC. All rights reserved.</p>
   </footer>
