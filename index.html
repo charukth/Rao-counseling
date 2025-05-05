@@ -1,35 +1,47 @@
 
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rao Counseling PLLC</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: sans-serif;
-      margin: 0;
+      font-family: 'Lora', serif;
       background-color: #fdfdfb;
       color: #333;
+      margin: 0;
     }
     header {
-      background-color: #a8d5ba; /* Mint-inspired green */
-      color: #fff;
-      padding: 2rem;
+      background-color: #a8d5ba;
+      padding: 2em;
       text-align: center;
+      color: white;
+    }
+    nav {
+      background-color: #4e9474;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.75em;
+      padding: 1em;
     }
     nav a {
-      margin: 0 1rem;
+      background-color: #2e6f57;
       color: #fff;
+      padding: 0.5em 1.25em;
+      border-radius: 999px;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
+    }
+    nav a:hover {
+      background-color: #245a45;
     }
     section {
-      padding: 2rem;
+      padding: 2em;
     }
-    .section-divider {
-      border-top: 3px solid #d7bfa5; /* light clay tile accent */
-      margin: 2rem 0;
+    .alt-section {
+      background-color: #f0f9f4;
     }
     .photo-container {
       max-width: 600px;
@@ -41,18 +53,35 @@
     .photo-container img {
       width: 100%;
       display: block;
-    }
-    .cropped-image {
-      width: 100%;
-      max-height: 400px; /* Adjust this value to control the height */
-      object-fit: cover; /* Ensures the image covers the area without distorting */
-      object-position: center; /* Centers the image, so it doesn't crop the main part of the image */
+      object-fit: cover;
     }
     .caption {
       text-align: center;
       font-style: italic;
       padding: 0.5rem;
       background-color: #f4f9f6;
+      color: #3b6e5a;
+    }
+    .services-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1em;
+    }
+    .services-list li {
+      list-style: disc;
+      margin-left: 1.5em;
+    }
+    details summary {
+      background-color: #d7ede2;
+      color: #2d5c4b;
+      padding: 1em;
+      border-radius: 999px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-bottom: 0.5em;
+    }
+    details[open] summary {
+      background-color: #bedfcf;
     }
     .resources-grid {
       display: grid;
@@ -62,25 +91,38 @@
     }
     .resource-button {
       display: block;
-      background-color: #6ba583; /* darker mint green */
+      background-color: #4e9474;
       color: white;
       padding: 1rem;
       text-align: center;
       text-decoration: none;
       border-radius: 12px;
     }
-    details {
-      margin-bottom: 1rem;
+    footer {
+      background-color: #e4c6a1;
+      padding: 2em;
+      text-align: center;
+      color: #444;
     }
-    summary {
-      font-weight: bold;
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 0.75em;
+      margin-bottom: 1em;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      font-family: 'Lora', serif;
+    }
+    form button {
+      background-color: #4e9474;
+      color: white;
+      border: none;
+      padding: 0.75em 1.5em;
+      border-radius: 999px;
       cursor: pointer;
     }
-    footer {
-      background-color: #f1ede8;
-      padding: 2rem;
-      text-align: center;
-      color: #555;
+    form button:hover {
+      background-color: #39755b;
     }
   </style>
 </head>
@@ -95,23 +137,22 @@
       <a href="#resources">Resources</a>
       <a href="#contact">Contact</a>
     </nav>
-  </header>
-
-  <section id="about">
+  </header>  <section id="about">
     <h2>About Me</h2>
-    <p>Welcome to my counseling practice. I am dedicated to helping individuals explore their thoughts, emotions, and behaviors for personal growth. My approach is compassionate and collaborative, providing a safe space for you to find clarity and healing.</p>
-  </section>
-
-  <div class="section-divider"></div>
-
-  <section id="services">
+    <p>I’m Charlie Rao, a licensed therapist dedicated to helping individuals navigate life's challenges and find healing. I create a safe, nonjudgmental space where clients can explore their thoughts and emotions, set goals, and work through obstacles in their mental health journey.</p>
+  </section>  <section class="photo-container">
+    <img src="Resized_Screenshot_20210512-183722_Photos_142445446614410.jpg" alt="No mud, no lotus" />
+    <div class="caption">"No mud, no lotus." A reminder that growth often emerges from difficulty.</div>
+  </section>  <section id="services" class="alt-section">
     <h2>Services</h2>
-    <p>At Rao Counseling, I offer individual therapy sessions tailored to your unique needs. I specialize in anxiety, stress management, self-esteem, and life transitions. My approach is integrative, drawing on various therapeutic techniques to suit your goals.</p>
-  </section>
-
-  <div class="section-divider"></div>
-
-  <section id="faq">
+    <ul class="services-list">
+      <li>Senior citizens & caregivers</li>
+      <li>Multicultural & multigenerational households</li>
+      <li>South Asian backgrounds</li>
+      <li>Teens and young adults</li>
+      <li>Adults navigating anxiety or mood disorders</li>
+    </ul>
+  </section>  <section id="faq">
     <h2>FAQs</h2>
     <details><summary>What is therapy?</summary><p>Therapy is a supportive process to explore thoughts, feelings, and behaviors for growth and healing.</p></details>
     <details><summary>What is counseling?</summary><p>Counseling often focuses on specific issues or goals with a solution-oriented approach.</p></details>
@@ -120,65 +161,42 @@
     <details><summary>What if I feel stuck or not making progress?</summary><p>We’ll check in, revisit goals, and adapt our approach. Therapy is a collaborative space.</p></details>
     <details><summary>Is therapy confidential?</summary><p>Yes, with few legal exceptions (like safety concerns). Your privacy matters deeply.</p></details>
     <details><summary>Can I contact you between sessions?</summary><p>Yes — for scheduling or quick check-ins via the secure message portal.</p></details>
-  </section>
-
-  <div class="section-divider"></div>
-
-  <section id="forms">
+  </section>  <section id="forms" class="alt-section">
     <h2>Client Forms</h2>
-    <ul>
-      <li><a href="/forms/intake.pdf" target="_blank">New Client Intake Form (fillable PDF)</a></li>
-      <li><a href="/forms/consent.pdf" target="_blank">Consent to Treat (fillable PDF)</a></li>
-      <li><a href="/forms/hipaa.pdf" target="_blank">HIPAA Privacy Notice</a></li>
-    </ul>
-  </section>
-
-  <div class="section-divider"></div>
-
-  <section id="resources">
-    <h2>Resources</h2>
     <div class="resources-grid">
-      <a href="https://api.portal.therapyappointment.com/n/public/findYourTherapist/A6BAEF410F874F5B95522ED7EFAA8372" class="resource-button">TherapyAppointment</a>
-      <a href="https://doxy.me/charlierao" class="resource-button">Doxy.me (Telehealth)</a>
-      <a href="https://www.psychologytoday.com/us/therapists/charlie-rao-missouri-city-tx/762997" class="resource-button">Psychology Today</a>
-      <a href="https://www.linkedin.com/in/charu-rao?trk=contact-info" class="resource-button">LinkedIn</a>
+      <a class="resource-button" href="/forms/intake.pdf" target="_blank">Client Intake Form</a>
+      <a class="resource-button" href="/forms/consent.pdf" target="_blank">Consent to Treat</a>
+      <a class="resource-button" href="/forms/hipaa.pdf" target="_blank">HIPAA Notice</a>
     </div>
-    <h3 style="margin-top:2rem">Self-Care Tools</h3>
+  </section>  <section id="resources">
+    <h2>Client Resources</h2>
     <div class="resources-grid">
-      <a href="https://quietkit.com" class="resource-button">QuietKit (Mindfulness)</a>
-      <a href="https://insighttimer.com" class="resource-button">Insight Timer</a>
-      <a href="https://howwefeel.org" class="resource-button">How We Feel App</a>
+      <a class="resource-button" href="https://api.portal.therapyappointment.com/n/public/findYourTherapist/A6BAEF410F874F5B95522ED7EFAA8372">📅 Schedule & Secure Message</a>
+      <a class="resource-button" href="https://doxy.me/charlierao">📹 Virtual Telehealth</a>
     </div>
-  </section>
-
-  <div class="section-divider"></div>
-
-  <section id="contact">
+    <h3 style="margin-top: 2em">Self-Care Tools</h3>
+    <div class="resources-grid">
+      <a class="resource-button" href="https://quietkit.com/box-breathing/">🧘 QuietKit - Box Breathing</a>
+      <a class="resource-button" href="https://insighttimer.com/">🧘 Insight Timer</a>
+      <a class="resource-button" href="https://howwefeel.org/">🧠 How We Feel App</a>
+    </div>
+  </section>  <section id="contact" class="alt-section">
     <h2>Contact Me</h2>
-    <p>Feel free to reach out with any questions or to schedule an appointment. I look forward to working with you.</p>
-    <form action="mailto:charlierao@example.com" method="post" enctype="text/plain">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required><br>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required><br>
-      <label for="message">Message:</label><br>
-      <textarea id="message" name="message" rows="4" required></textarea><br>
+    <form action="https://formspree.io/f/myzwepyr" method="POST">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required />
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+      <p style="font-size: 0.9em; color: #555;"><em>Please do not submit personal health info. This form is not HIPAA-compliant.</em></p>
       <button type="submit">Send Message</button>
     </form>
-  </section>
-
-  <section class="photo-container">
-    <img src="https://github.com/charukth/Rao-counseling/blob/13fd1f3d4061796594b23fa83391aebb167ce04b/Resized_Screenshot_20210512-183722_Photos_142445446614410.jpg?raw=true" alt="No mud, no lotus" class="cropped-image" />
-    <div class="caption">No mud, no lotus.</div>
-  </section>
-
-  <section class="photo-container">
-    <img src="https://github.com/charukth/Rao-counseling/blob/13fd1f3d4061796594b23fa83391aebb167ce04b/Screenshot_20190927-112703_Chrome.jpg?raw=true" alt="Grass isn't greener" />
-    <div class="caption">The grass isn't greener — it's where you water it.</div>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Rao Counseling PLLC</p>
+  </section>  <section class="photo-container">
+    <img src="Screenshot_20190927-112703_Chrome.jpg" alt="Grass isn't greener" />
+    <div class="caption">The grass isn't greener—it's where you water it.</div>
+  </section>  <footer>
+    <p>&copy; 2025 Rao Counseling PLLC. All rights reserved.</p>
   </footer>
 </body>
 </html>
