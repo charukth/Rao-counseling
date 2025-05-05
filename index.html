@@ -1,5 +1,6 @@
 
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -41,6 +42,12 @@
       width: 100%;
       display: block;
     }
+    .cropped-image {
+      width: 100%;
+      max-height: 400px; /* Adjust this value to control the height */
+      object-fit: cover; /* Ensures the image covers the area without distorting */
+      object-position: center; /* Centers the image, so it doesn't crop the main part of the image */
+    }
     .caption {
       text-align: center;
       font-style: italic;
@@ -81,17 +88,30 @@
   <header>
     <h1>Rao Counseling PLLC</h1>
     <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
       <a href="#faq">FAQs</a>
       <a href="#forms">Forms</a>
       <a href="#resources">Resources</a>
+      <a href="#contact">Contact</a>
     </nav>
-  </header>  <section class="photo-container">
-    <img src="placeholder-lotus.jpg" alt="No mud, no lotus placeholder" />
-    <div class="caption">No mud, no lotus.</div>
-  </section>  <section class="photo-container">
-    <img src="placeholder-grass.jpg" alt="Grass isn't greener placeholder" />
-    <div class="caption">The grass isn't greener — it's where you water it.</div>
-  </section>  <div class="section-divider"></div>  <section id="faq">
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Welcome to my counseling practice. I am dedicated to helping individuals explore their thoughts, emotions, and behaviors for personal growth. My approach is compassionate and collaborative, providing a safe space for you to find clarity and healing.</p>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <section id="services">
+    <h2>Services</h2>
+    <p>At Rao Counseling, I offer individual therapy sessions tailored to your unique needs. I specialize in anxiety, stress management, self-esteem, and life transitions. My approach is integrative, drawing on various therapeutic techniques to suit your goals.</p>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <section id="faq">
     <h2>FAQs</h2>
     <details><summary>What is therapy?</summary><p>Therapy is a supportive process to explore thoughts, feelings, and behaviors for growth and healing.</p></details>
     <details><summary>What is counseling?</summary><p>Counseling often focuses on specific issues or goals with a solution-oriented approach.</p></details>
@@ -100,14 +120,22 @@
     <details><summary>What if I feel stuck or not making progress?</summary><p>We’ll check in, revisit goals, and adapt our approach. Therapy is a collaborative space.</p></details>
     <details><summary>Is therapy confidential?</summary><p>Yes, with few legal exceptions (like safety concerns). Your privacy matters deeply.</p></details>
     <details><summary>Can I contact you between sessions?</summary><p>Yes — for scheduling or quick check-ins via the secure message portal.</p></details>
-  </section>  <div class="section-divider"></div>  <section id="forms">
+  </section>
+
+  <div class="section-divider"></div>
+
+  <section id="forms">
     <h2>Client Forms</h2>
     <ul>
       <li><a href="/forms/intake.pdf" target="_blank">New Client Intake Form (fillable PDF)</a></li>
       <li><a href="/forms/consent.pdf" target="_blank">Consent to Treat (fillable PDF)</a></li>
       <li><a href="/forms/hipaa.pdf" target="_blank">HIPAA Privacy Notice</a></li>
     </ul>
-  </section>  <div class="section-divider"></div>  <section id="resources">
+  </section>
+
+  <div class="section-divider"></div>
+
+  <section id="resources">
     <h2>Resources</h2>
     <div class="resources-grid">
       <a href="https://api.portal.therapyappointment.com/n/public/findYourTherapist/A6BAEF410F874F5B95522ED7EFAA8372" class="resource-button">TherapyAppointment</a>
@@ -121,7 +149,35 @@
       <a href="https://insighttimer.com" class="resource-button">Insight Timer</a>
       <a href="https://howwefeel.org" class="resource-button">How We Feel App</a>
     </div>
-  </section>  <footer>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out with any questions or to schedule an appointment. I look forward to working with you.</p>
+    <form action="mailto:charlierao@example.com" method="post" enctype="text/plain">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br>
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" required></textarea><br>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <section class="photo-container">
+    <img src="https://github.com/charukth/Rao-counseling/blob/13fd1f3d4061796594b23fa83391aebb167ce04b/Resized_Screenshot_20210512-183722_Photos_142445446614410.jpg?raw=true" alt="No mud, no lotus" class="cropped-image" />
+    <div class="caption">No mud, no lotus.</div>
+  </section>
+
+  <section class="photo-container">
+    <img src="https://github.com/charukth/Rao-counseling/blob/13fd1f3d4061796594b23fa83391aebb167ce04b/Screenshot_20190927-112703_Chrome.jpg?raw=true" alt="Grass isn't greener" />
+    <div class="caption">The grass isn't greener — it's where you water it.</div>
+  </section>
+
+  <footer>
     <p>&copy; 2025 Rao Counseling PLLC</p>
   </footer>
 </body>
