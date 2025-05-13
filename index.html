@@ -38,35 +38,38 @@
       color: #2d4d41;
     }
 
-    .faq summary {
-      background-color: #d0eadf;
-      color: #2d4d41;
-      border-radius: 999px;
-      padding: 1rem;
-      cursor: pointer;
-      margin-bottom: 0.5rem;
-      list-style: none;
-      position: relative;
-    }
+.faq summary {
+  background-color: #d0eadf;
+  color: #2d4d41;
+  border-radius: 999px;
+  padding: 1rem 2.5rem 1rem 1.25rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 0.75rem;
+  position: relative;
+  list-style: none;
+}
 
-    .faq summary::after {
-      content: "\\27A4";
-      position: absolute;
-      right: 1.5rem;
-      transform: rotate(90deg);
-    }
+.faq summary::after {
+  content: "▶";
+  position: absolute;
+  right: 1.25rem;
+  top: 50%;
+  transform: translateY(-50%) rotate(0deg);
+  transition: transform 0.3s;
+}
 
-    .faq details[open] summary::after {
-      transform: rotate(270deg);
-    }
+.faq details[open] summary::after {
+  transform: translateY(-50%) rotate(90deg);
+}
 
-    .faq p {
-      background-color: #f0f8f4;
-      border-radius: 16px;
-      padding: 1rem;
-      margin-top: 0;
-      margin-bottom: 2rem;
-    }
+.faq p {
+  background-color: #f0f8f4;
+  border-radius: 16px;
+  padding: 1rem;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
 
     .form-buttons { display: flex; flex-direction: column; gap: 12px; margin-bottom: 2em; }
     .form-link { background-color: #336e64; color: white; padding: 12px 20px; border-radius: 999px; text-decoration: none; font-weight: 500; text-align: center; transition: background-color 0.3s; }
