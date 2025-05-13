@@ -1,5 +1,5 @@
-
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,15 +12,65 @@
     nav a { background-color: #4e9474; color: white; padding: 0.6rem 1.2rem; border-radius: 999px; text-decoration: none; font-weight: bold; transition: background-color 0.3s; }
     nav a:hover { background-color: #3e7c60; }
     section { padding: 2rem; max-width: 960px; margin: auto; }
-    .section-divider { height: 3rem; }
-    .photo-container { max-width: 600px; margin: 2rem auto; border-radius: 20px; overflow: hidden; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); }
-    .photo-container img { width: 100%; border-radius: 20px; }
-    .caption { text-align: center; font-style: italic; padding: 0.75rem; background-color: #f4f9f6; color: #2d4d41; }
     h2 { color: #4e9474; text-align: center; }
-    .faq summary { background-color: #d0eadf; color: #2d4d41; border-radius: 999px; padding: 1rem; cursor: pointer; margin-bottom: 0.5rem; list-style: none; position: relative; }
-    .faq summary::after { content: "\27A4"; position: absolute; right: 1.5rem; transform: rotate(90deg); }
-    .faq details[open] summary::after { transform: rotate(270deg); }
-    .faq p { background-color: #f0f8f4; border-radius: 16px; padding: 1rem; margin-top: 0; margin-bottom: 2rem; }
+    .section h3 { color: #4e9474; font-size: 1.2em; margin-top: 2em; }
+
+    .photo-container {
+      max-width: 600px;
+      margin: 2rem auto;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .photo-container img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+
+    .caption {
+      text-align: center;
+      font-style: italic;
+      padding: 0.75rem;
+      background-color: #f4f9f6;
+      color: #2d4d41;
+    }
+
+    .faq summary {
+      background-color: #d0eadf;
+      color: #2d4d41;
+      border-radius: 999px;
+      padding: 1rem;
+      cursor: pointer;
+      margin-bottom: 0.5rem;
+      list-style: none;
+      position: relative;
+    }
+
+    .faq summary::after {
+      content: "\\27A4";
+      position: absolute;
+      right: 1.5rem;
+      transform: rotate(90deg);
+    }
+
+    .faq details[open] summary::after {
+      transform: rotate(270deg);
+    }
+
+    .faq p {
+      background-color: #f0f8f4;
+      border-radius: 16px;
+      padding: 1rem;
+      margin-top: 0;
+      margin-bottom: 2rem;
+    }
+
+    .form-buttons { display: flex; flex-direction: column; gap: 12px; margin-bottom: 2em; }
+    .form-link { background-color: #336e64; color: white; padding: 12px 20px; border-radius: 999px; text-decoration: none; font-weight: 500; text-align: center; transition: background-color 0.3s; }
+    .form-link:hover { background-color: #2b5d56; }
     .resources-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
     .resource-button { background-color: #6ba583; color: white; text-decoration: none; padding: 1rem; border-radius: 999px; text-align: center; transition: background-color 0.3s ease; }
     .resource-button:hover { background-color: #5a9473; }
@@ -29,26 +79,15 @@
     form button { background-color: #4e9474; color: white; font-weight: bold; border: none; padding: 0.75rem 1.5rem; border-radius: 999px; cursor: pointer; }
     form button:hover { background-color: #3c7d61; }
     footer { background-color: #f1ede8; color: #555; padding: 2rem; text-align: center; }
- /* Tighter layout for About Me */
-#about p {
-  margin-top: 1em;
-  line-height: 1.6;
-}
-
-#about .image-block {
-  margin-top: 1.5em;
-}
-
-#about .image-block p {
-  margin-top: 0.3em;
-}
   </style>
 </head>
 <body>
+
   <header>
     <h1>Rao Counseling PLLC</h1>
     <p>Your journey toward clarity & healing begins here.</p>
   </header>
+
   <nav>
     <a href="#about">About</a>
     <a href="#services">Services</a>
@@ -57,17 +96,20 @@
     <a href="#resources">Resources</a>
     <a href="#contact">Contact</a>
   </nav>
-  <section id="about">
+
+  <section class="section" id="about">
     <h2>About Me</h2>
     <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem;">
       <img src="https://charukth.github.io/Rao-counseling/images/charlie_rao_web_photo.jpg" alt="Charlie Rao, LPC-A" style="max-width: 200px; border-radius: 20px;" />
       <p>Hi! I’m Charlie Rao, a licensed therapist dedicated to helping individuals navigate life's challenges. I create a safe, nonjudgmental space where you can explore emotions, set goals, & work through life transitions at your own pace.</p>
     </div>
   </section>
+
   <section class="photo-container">
-    <img src="https://raw.githubusercontent.com/charukth/Rao-counseling/main/Resized_Screenshot_20210512-183722_Photos_142445446614410.jpg" alt="No mud, no lotus" style="object-fit: cover; height: 400px;" />
-    <div class="caption">A reminder that growth often comes from discomfort.</div>
+    <img src="https://raw.githubusercontent.com/charukth/Rao-counseling/main/Resized_Screenshot_20210512-183722_Photos_142445446614410.jpg" alt="No mud no lotus" />
+    <div class="caption">"No mud, no lotus."</div>
   </section>
+
   <section class="section" id="services" style="background-color:#f4f9f6;">
     <h2>Who I Help</h2>
     <ul>
@@ -77,8 +119,27 @@
       <li>Individuals from South Asian backgrounds</li>
       <li>Clients living w/ anxiety, depression, mood &/or bipolar disorder</li>
     </ul>
+
+    <h2>Services Offered</h2>
+    <h3>How I Offer Therapy</h3>
+    <ul>
+      <li><strong>In-Person Sessions:</strong> Comfortable, face-to-face sessions in Missouri City, TX.</li>
+      <li><strong>Virtual Telehealth:</strong> Secure video sessions via <a href="https://doxy.me/charlierao" target="_blank">doxy.me/charlierao</a>.</li>
+      <li><strong>Walking Therapy:</strong> Gentle, guided conversations in nearby parks.</li>
+      <li><strong>Art-Informed Therapy:</strong> Incorporates creative tools to support emotional healing.</li>
+    </ul>
   </section>
-  <section id="faq" class="faq">
+
+  <section class="photo-container">
+    <img src="https://raw.githubusercontent.com/charukth/Rao-counseling/main/Screenshot_20190927-112703_Chrome.jpg" alt="Self-care reminder" />
+    <div class="caption">The grass isn’t greener — it’s where you water it.</div>
+  </section>
+
+  <!-- FAQs, Forms, Resources, Contact, Footer go here -->
+
+</body>
+</html>
+<section id="faq" class="faq">
     <h2>Frequently Asked Questions</h2>
     <details><summary>What is therapy?</summary><p>Therapy is a process of exploring your inner world with a trained professional to gain clarity, manage symptoms, and grow.</p></details>
     <details><summary>What is counseling?</summary><p>Counseling typically focuses on resolving specific concerns through supportive conversation and guidance.</p></details>
@@ -88,70 +149,27 @@
     <details><summary>Is therapy confidential?</summary><p>Yes, with legal exceptions for safety concerns. Your privacy is respected.</p></details>
     <details><summary>Can I contact you between sessions?</summary><p>Yes — for scheduling or quick messages via my secure portal.</p></details>
   </section>
+
   <section id="forms">
-  <h2>New Client Forms</h2>
-  <p>Please complete all required forms before your first session.</p>
-  <div class="form-buttons">
-    <a class="form-link" href="forms/Fillable_New_Client_Intake_Form_RAOCOUNSELING.pdf" target="_blank">Client Intake Form</a>
-    <a class="form-link" href="forms/Fillable_Confidentiality_Cancellation_RAOCOUNSELING.pdf" target="_blank">Confidentiality, Cancellation & Fees</a>
-    <a class="form-link" href="forms/Fillable_Professional_Disclosure_HIPAA_RAOCOUNSELING.pdf" target="_blank">Professional Disclosure & HIPAA Release</a>
-    <a class="form-link" href="forms/Fillable_Email_Telehealth_RAOCOUNSELING.pdf" target="_blank">Email Communication & Telehealth Consent</a>
-  </div>
+    <h2>New Client Forms</h2>
+    <div class="form-buttons">
+      <a class="form-link" href="forms/Fillable_New_Client_Intake_Form_RAOCOUNSELING.pdf" target="_blank">Client Intake Form</a>
+      <a class="form-link" href="forms/Fillable_Confidentiality_Cancellation_RAOCOUNSELING.pdf" target="_blank">Confidentiality, Cancellation & Fees</a>
+      <a class="form-link" href="forms/Fillable_Professional_Disclosure_HIPAA_RAOCOUNSELING.pdf" target="_blank">Professional Disclosure & HIPAA Release</a>
+      <a class="form-link" href="forms/Fillable_Email_Telehealth_RAOCOUNSELING.pdf" target="_blank">Email Communication & Telehealth Consent</a>
+    </div>
+  </section>
 
-  <h2>Informational Forms</h2>
-  <p>These forms are provided for your reference.</p>
-  <div class="form-buttons">
-    <a class="form-link" href="forms/Crisis_Response_Policy_UPDATED_FINAL_RAOCOUNSELING.pdf" target="_blank">Crisis Response Policy</a>
-  </div>
-</section>
-
-<style>
-  .form-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin-bottom: 2em;
-  }
-
-  .form-link {
-    display: inline-block;
-    background-color: #336e64; /* your dark green accent */
-    color: white;
-    padding: 12px 20px;
-    border-radius: 999px;
-    text-decoration: none;
-    font-weight: 500;
-    text-align: center;
-    transition: background-color 0.3s;
-  }
-
-  .form-link:hover {
-    background-color: #2b5d56;
-  }
-
-  @media (max-width: 600px) {
-    .form-buttons {
-      gap: 10px;
-    }
-    .form-link {
-      font-size: 15px;
-      padding: 10px 18px;
-    }
-  }
-</style>
   <section id="resources" style="background-color:#f4f9f6;">
     <h2>Client Resources</h2>
     <div class="resources-grid">
-      <a href="https://api.portal.therapyappointment.com/n/public/findYourTherapist/A6BAEF410F874F5B95522ED7EFAA8372" class="resource-button">📅 TherapyAppointment: schedule or message</a>
-      <a href="https://doxy.me/charlierao" class="resource-button">📹 Doxy.me: virtual telehealth</a>
-    </div>
-    <h3 style="margin-top: 2rem; text-align:center;">Self-Care Tools</h3>
-    <div class="resources-grid">
-      <a href="https://quietkit.com/box-breathing/" class="resource-button">🧘 QuietKit: Navy SEALs breathing tool</a>
-      <a href="https://insighttimer.com/" class="resource-button">🧘 Insight Timer: free meditations</a>
-      <a href="https://howwefeel.org/" class="resource-button">🧠 How We Feel: emotion tracking app</a>
+      <a href="https://api.portal.therapyappointment.com/n/public/findYourTherapist/A6BAEF410F874F5B95522ED7EFAA8372" class="resource-button">📅 TherapyAppointment</a>
+      <a href="https://doxy.me/charlierao" class="resource-button">📹 Doxy.me Virtual Room</a>
+      <a href="https://quietkit.com/box-breathing/" class="resource-button">🧘 Box Breathing</a>
+      <a href="https://insighttimer.com/" class="resource-button">🧘 Insight Timer</a>
     </div>
   </section>
+
   <section id="contact">
     <h2>Contact Me</h2>
     <form action="https://formspree.io/f/myzwepyr" method="POST">
@@ -161,18 +179,16 @@
       <input type="email" id="email" name="email" placeholder="Enter your email" required />
       <label for="message">Your Message</label>
       <textarea id="message" name="message" rows="4" placeholder="Write your message" required></textarea>
-      <p style="font-size: 0.9em; color: #666; text-align:center; margin-bottom: 1rem;">Please don’t include personal health information (PHI) — this form is not HIPAA-secure.</p>
+      <p style="font-size: 0.9em; color: #666; text-align:center;">Please don’t include personal health information — this form is not HIPAA-secure.</p>
       <div style="text-align:center">
         <button type="submit">Send Message</button>
       </div>
     </form>
   </section>
-  <section class="photo-container">
-    <img src="https://raw.githubusercontent.com/charukth/Rao-counseling/main/Screenshot_20190927-112703_Chrome.jpg" alt="Self-care reminder" />
-    <div class="caption">The grass isn’t greener — it’s where you water it.</div>
-  </section>
+
   <footer>
     <p>&copy; 2025 Rao Counseling PLLC. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
