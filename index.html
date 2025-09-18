@@ -15,13 +15,7 @@
     h2 { color: #4e9474; text-align: center; }
     .section h3 { color: #4e9474; font-size: 1.2em; margin-top: 2em; }
 
-    .photo-container {
-      max-width: 600px;
-      margin: 2rem auto;
-      border-radius: 20px;
-      overflow: hidden;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
+    .photo-container { max-width: 600px; margin: 2rem auto; border-radius: 20px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
     .photo-container img { width: 100%; height: auto; object-fit: cover; border-radius: 20px; max-height: 420px; }
     .caption { text-align: center; font-style: italic; padding: 0.75rem; background-color: #f4f9f6; color: #2d4d41; }
 
@@ -46,8 +40,22 @@
     form button:hover { background-color: #3c7d61; }
     footer { background-color: #f1ede8; color: #555; padding: 2rem; text-align: center; }
 
-    /* Therapy Tree */
-    #therapy-tree .branch { flex:1 1 200px; background:#d0eadf; border-radius:16px; padding:1.5rem; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
+    /* Back to top button */
+    #backToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #6ba583;
+      color: white;
+      border: none;
+      padding: 12px 16px;
+      border-radius: 999px;
+      font-size: 14px;
+      cursor: pointer;
+      display: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    #backToTop:hover { background: #4e9474; }
   </style>
 </head>
 <body>
@@ -59,7 +67,8 @@
 
   <nav>
     <a href="#about">About</a>
-    <a href="#therapy-tree">Therapy Tree</a>
+    <a href="#therapy-offerings">Therapy Offerings</a>
+    <a href="#creative-therapy">Creative Therapy</a>
     <a href="#faq">FAQs</a>
     <a href="#forms">Forms</a>
     <a href="#resources">Resources</a>
@@ -84,15 +93,34 @@
     <div class="caption"><em>Meet Charlie – a short introduction video.</em></div>
   </section>
 
-  <!-- Therapy Tree -->
-  <section id="therapy-tree" style="background-color:#f4f9f6; padding:2rem; text-align:center;">
-    <h2>Therapy Tree</h2>
-    <p style="max-width:700px; margin: 0 auto 2rem; color:#2d4d41;">Rooted in compassion, culture, and growth, these are the core areas I focus on in therapy.</p>
-    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:2rem; max-width:800px; margin:auto;">
-      <div class="branch">🌿<br><strong>Caregiver & Family Therapy</strong><p style="font-size:0.9em; margin-top:0.5rem;">Support for caregivers, dementia care, and sandwich generation stress.</p></div>
-      <div class="branch">🌍<br><strong>Multicultural & Multigenerational Therapy</strong><p style="font-size:0.9em; margin-top:0.5rem;">Helping families navigate identity and communication challenges across cultures and generations.</p></div>
-      <div class="branch">🎓<br><strong>Young Adult / College & Career Coaching</strong><p style="font-size:0.9em; margin-top:0.5rem;">Guidance for students & young adults facing high expectations, pressures, and “failure to launch” struggles.</p></div>
-      <div class="branch">💬<br><strong>Individual Therapy</strong><p style="font-size:0.9em; margin-top:0.5rem;">For teens & adults navigating anxiety, depression, bipolar disorder, and life transitions.</p></div>
+  <!-- Lotus banner -->
+  <section class="photo-container" style="margin-top: 20px;">
+    <img src="https://raw.githubusercontent.com/charukth/Rao-counseling/main/Resized_Screenshot_20210512-183722_Photos_142445446614410.jpg" alt="No mud no lotus">
+    <div class="caption"><em>"No mud, no lotus:" From challenge comes transformation.</em></div>
+  </section>
+
+  <!-- Therapy Offerings (Tree infographic) -->
+  <section id="therapy-offerings">
+    <h2>Therapy Offerings</h2>
+    <div class="photo-container">
+      <img src="https://raw.githubusercontent.com/charukth/Rao-counseling/refs/heads/main/images/tree-infographic.png" alt="Therapy Offerings Tree">
+    </div>
+  </section>
+
+  <!-- Creative Therapy -->
+  <section id="creative-therapy" style="background-color:#fff; padding: 2rem;">
+    <h2>Creative Therapy Offerings</h2>
+    <div class="photo-container">
+      <img src="https://raw.githubusercontent.com/charukth/Rao-counseling/refs/heads/main/walking-therapy.jpg" alt="Walking Therapy">
+      <div class="caption"><em>Walking Therapy — nature, movement, and mindful conversation.</em></div>
+    </div>
+    <div class="photo-container">
+      <img src="https://raw.githubusercontent.com/charukth/Rao-counseling/refs/heads/main/kintsugi.jpg" alt="Kintsugi">
+      <div class="caption"><em>Kintsugi — embracing cracks as part of your story of healing.</em></div>
+    </div>
+    <div class="photo-container">
+      <img src="https://raw.githubusercontent.com/charukth/Rao-counseling/refs/heads/main/zentangle.jpg" alt="Zentangle">
+      <div class="caption"><em>Zentangle — freeform doodling as a mindful art meditation.</em></div>
     </div>
   </section>
 
@@ -152,6 +180,19 @@
       </div>
     </form>
   </section>
+
+  <!-- Back to top button -->
+  <button id="backToTop" onclick="window.scrollTo({top:0, behavior:'smooth'});">↑ Top</button>
+  <script>
+    const btn = document.getElementById("backToTop");
+    window.onscroll = function() {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        btn.style.display = "block";
+      } else {
+        btn.style.display = "none";
+      }
+    };
+  </script>
 
   <!-- Footer -->
   <footer>
