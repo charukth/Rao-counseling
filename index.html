@@ -23,12 +23,13 @@
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
-    .photo-container img {
+    .photo-container img, .photo-container video {
       width: 100%;
       height: auto;
       object-fit: cover;
       border-radius: 20px;
       max-height: 420px;
+      display: block;
     }
 
     .caption {
@@ -95,13 +96,14 @@
   <nav>
     <a href="#about">About</a>
     <a href="#services">Services</a>
+    <a href="#creative">Creative Therapy</a>
     <a href="#faq">FAQs</a>
     <a href="#forms">Forms</a>
     <a href="#resources">Resources</a>
     <a href="#contact">Contact</a>
   </nav>
 
-<h2 style="text-align: center;">About Me</h2>
+<h2 style="text-align: center;" id="about">About Me</h2>
 <div style="display: flex; align-items: flex-start; gap: 20px; flex-wrap: wrap; justify-content: center; padding: 10px 20px; max-width: 900px; margin: 0 auto;">
   <img src="https://charukth.github.io/Rao-counseling/images/charlie_rao_web_photo.jpg" alt="Charlie Rao, LPC-A" style="max-width: 200px; border-radius: 20px; flex-shrink: 0;">
   <div style="max-width: 500px; line-height: 1.6; font-size: 16px; padding: 20px;">
@@ -113,6 +115,15 @@
     </p>
   </div>
 </div>
+
+<!-- Personal Video -->
+<section class="photo-container">
+  <video controls>
+    <source src="FB_VID_9182602636820471602.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="caption"><em>A short introduction video from Charlie Rao</em></div>
+</section>
 
 <section class="photo-container" style="margin-top: 20px;">
   <img src="https://raw.githubusercontent.com/charukth/Rao-counseling/main/Resized_Screenshot_20210512-183722_Photos_142445446614410.jpg" alt="No mud no lotus">
@@ -137,6 +148,26 @@
     <li><strong>Walking Therapy:</strong> Gentle, guided conversations in nearby parks.</li>
     <li><strong>Art-Informed Therapy:</strong> Incorporates creative tools to support emotional healing.</li>
   </ul>
+</section>
+
+<!-- New Creative Therapy Section -->
+<section id="creative" style="background-color:#f4f9f6;">
+  <h2>Creative Therapy Offerings</h2>
+
+  <div class="photo-container">
+    <img src="walking-therapy.jpg" alt="Walking therapy nature path">
+    <div class="caption">Walking Therapy: Gentle guided conversations in nature.</div>
+  </div>
+
+  <div class="photo-container">
+    <img src="zentangle.jpg" alt="Zentangle drawing">
+    <div class="caption">Zen Art Therapy: Mindful doodling to reduce stress and invite creativity.</div>
+  </div>
+
+  <div class="photo-container">
+    <img src="kintsugi.jpg" alt="Kintsugi repaired bowl">
+    <div class="caption">Kintsugi: Finding beauty in repair and transformation.</div>
+  </div>
 </section>
 
 <section id="faq" class="faq">
