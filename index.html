@@ -8,54 +8,494 @@
     gtag('js', new Date());
     gtag('config', 'G-G0CKBD6N44');
   </script>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rao Counseling PLLC | Compassionate Therapy in Missouri City, TX</title>
 
-  <meta name="description" content="Rao Counseling PLLC offers compassionate therapy for individuals, caregivers, and families in Missouri City, TX." />
-  <meta name="keywords" content="therapy, counseling, caregivers, Missouri City, Rao Counseling, mental health, LPC" />
+  <meta name="description" content="Rao Counseling PLLC offers compassionate therapy for teens, adults, caregivers, and families in Missouri City, TX and across Texas." />
+  <meta name="keywords" content="therapy, counseling, caregivers, Missouri City, Rao Counseling, mental health, LPC, anxiety, life transitions, telehealth Texas" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
-    body { font-family:'Lora',serif; margin:0; background:#fdfdfb; color:#2d4d41; scroll-behavior: smooth;}
-    header {background:#a8d5ba; color:#fff; padding:2rem; text-align:center;}
-    nav {background:#6ba583; display:flex; flex-wrap:wrap; justify-content:center; gap:.75rem; padding:1rem; position: sticky; top: 0; z-index: 1000;}
-    nav a {background:#4e9474; color:#fff; padding:.6rem 1.2rem; border-radius:999px; text-decoration:none; font-weight:bold; transition:.3s;}
-    nav a:hover {background:#3e7c60;}
-    
-    section {padding:4rem 2rem; max-width:960px; margin:auto; scroll-margin-top: 80px;}
-    
-    h2 {color:#4e9474; text-align:center; margin-bottom: 2rem;}
-    .photo-container {max-width:600px; margin:2rem auto; border-radius:20px; overflow:hidden; box-shadow:0 4px 10px rgba(0,0,0,.1);}
-    .photo-container img {width:100%; border-radius:20px; display: block;}
-    .caption {text-align:center; font-style:italic; padding:.75rem; background:#f4f9f6; color:#2d4d41;}
-    
-    .faq summary {background:#d0eadf; color:#2d4d41; border-radius:999px; padding:1rem 2.5rem 1rem 1.25rem; font-weight:bold; cursor:pointer; margin-bottom:.75rem; position:relative; list-style: none;}
-    .faq summary::-webkit-details-marker {display: none;}
-    .faq summary::after {content:"▶"; position:absolute; right:1.25rem; top:50%; transform:translateY(-50%); transition:.3s;}
-    .faq details[open] summary::after {transform:translateY(-50%) rotate(90deg);}
-    .faq p {background:#f0f8f4; border-radius:16px; padding:1rem; margin-top:0; margin-bottom:1.5rem;}
-    
-    form input, form textarea {width:100%; padding:.75rem; border-radius:999px; border:1px solid #ccc; margin-bottom:1rem; font-family:'Lora',serif; box-sizing: border-box;}
-    form textarea {border-radius:16px;}
-    form button {background:#4e9474; color:white; font-weight:bold; border:none; padding:.75rem 1.5rem; border-radius:999px; cursor:pointer; transition: .3s;}
-    form button:hover {background:#3c7d61;}
-    
-    footer {background:#f1ede8; color:#555; padding:3rem 2rem; text-align:center;}
-    #backToTop {position:fixed; bottom:80px; right:20px; background:#6ba583; color:white; border:none; padding:12px 16px; border-radius:999px; font-size:14px; cursor:pointer; display:none; box-shadow:0 4px 10px rgba(0,0,0,.2); z-index: 9998;}
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: #fdfdfb;
+      color: #2d4d41;
+      font-family: 'Inter', sans-serif;
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(to bottom, #eef6f0 0%, #fdfdfb 100%);
+      color: #2d4d41;
+      padding: 2.5rem 1.5rem 3rem;
+      text-align: center;
+    }
+
+    .hero-inner {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .hero-logo {
+      width: 110px;
+      max-width: 100%;
+      margin: 0 auto 1rem;
+      display: block;
+    }
+
+    .hero-title {
+      font-family: 'Lora', serif;
+      font-size: 2rem;
+      line-height: 1.2;
+      margin: 0 0 .75rem;
+      color: #2c5e4e;
+    }
+
+    .hero-subtitle {
+      font-size: 1rem;
+      color: #48675c;
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    nav {
+      background: #6ba583;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: .75rem;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0,0,0,.06);
+    }
+
+    nav a {
+      background: #4e9474;
+      color: #fff;
+      padding: .6rem 1.2rem;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: .3s;
+      font-size: .95rem;
+    }
+
+    nav a:hover {
+      background: #3e7c60;
+    }
+
+    section {
+      padding: 4rem 1.5rem;
+      max-width: 1100px;
+      margin: auto;
+      scroll-margin-top: 90px;
+    }
+
+    .section-soft {
+      background: #f4f9f6;
+      border-radius: 28px;
+    }
+
+    h2 {
+      font-family: 'Lora', serif;
+      color: #2c5e4e;
+      text-align: center;
+      margin: 0 0 1.5rem;
+      font-size: 2rem;
+    }
+
+    h3 {
+      font-family: 'Lora', serif;
+    }
+
+    .section-intro {
+      max-width: 720px;
+      margin: 0 auto 2rem;
+      text-align: center;
+      color: #48675c;
+      font-size: 1.05rem;
+    }
+
+    .about-wrap {
+      display: flex;
+      align-items: flex-start;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .about-photo {
+      width: 100%;
+      max-width: 240px;
+      border-radius: 22px;
+      box-shadow: 0 6px 18px rgba(0,0,0,.08);
+      display: block;
+    }
+
+    .about-text {
+      max-width: 620px;
+      font-size: 1rem;
+    }
+
+    .about-text p {
+      margin: 0 0 1rem;
+    }
+
+    .credentials {
+      font-style: italic;
+      color: #4e9474;
+      margin-top: .5rem;
+    }
+
+    .support-box {
+      max-width: 760px;
+      margin: 2rem auto 0;
+      background: #f4f9f6;
+      padding: 2rem;
+      border-radius: 22px;
+    }
+
+    .support-box p {
+      text-align: center;
+      margin-top: 0;
+      color: #48675c;
+    }
+
+    .support-list {
+      list-style: none;
+      padding: 0;
+      margin: 1.25rem 0 0;
+      display: grid;
+      gap: .9rem;
+    }
+
+    .support-list li {
+      background: #ffffff;
+      padding: .9rem 1rem;
+      border-radius: 16px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,.04);
+    }
+
+    .photo-container {
+      max-width: 900px;
+      margin: 2rem auto;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,.08);
+      background: #fff;
+    }
+
+    .photo-container img {
+      width: 100%;
+      border-radius: 20px;
+      display: block;
+    }
+
+    .caption {
+      text-align: center;
+      font-style: italic;
+      padding: .85rem 1rem;
+      background: #f4f9f6;
+      color: #2d4d41;
+    }
+
+    .resources-grid {
+      display: grid;
+      gap: 1rem;
+      max-width: 900px;
+      margin: 2rem auto 0;
+    }
+
+    .resource-card {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 1.4rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,.05);
+    }
+
+    .resource-card h3 {
+      margin-top: 0;
+      margin-bottom: .5rem;
+      color: #2c5e4e;
+      text-align: center;
+    }
+
+    .resource-card p {
+      margin: 0 0 .75rem;
+      text-align: center;
+      color: #48675c;
+    }
+
+    .resource-card a,
+    .reflection-link,
+    .medium-link {
+      color: #2c5e4e;
+      text-decoration: underline;
+      font-weight: 500;
+    }
+
+    .reflection-link,
+    .medium-link {
+      display: inline-block;
+      margin-top: .75rem;
+    }
+
+    .medium-wrap {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .faq summary {
+      background: #d0eadf;
+      color: #2d4d41;
+      border-radius: 999px;
+      padding: 1rem 2.5rem 1rem 1.25rem;
+      font-weight: 700;
+      cursor: pointer;
+      margin-bottom: .75rem;
+      position: relative;
+      list-style: none;
+    }
+
+    .faq summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq summary::after {
+      content: "▶";
+      position: absolute;
+      right: 1.25rem;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: .3s;
+    }
+
+    .faq details[open] summary::after {
+      transform: translateY(-50%) rotate(90deg);
+    }
+
+    .faq p {
+      background: #f0f8f4;
+      border-radius: 16px;
+      padding: 1rem;
+      margin-top: 0;
+      margin-bottom: 1.5rem;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: .9rem 1rem;
+      border-radius: 999px;
+      border: 1px solid #cfd9d3;
+      margin-bottom: 1rem;
+      font-family: 'Inter', sans-serif;
+      box-sizing: border-box;
+      font-size: 1rem;
+    }
+
+    form textarea {
+      border-radius: 16px;
+      min-height: 130px;
+      resize: vertical;
+    }
+
+    form button {
+      background: #4e9474;
+      color: white;
+      font-weight: 600;
+      border: none;
+      padding: .85rem 1.6rem;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: .3s;
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+    }
+
+    form button:hover {
+      background: #3c7d61;
+    }
+
+    .forms-buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .forms-buttons a {
+      background-color: #2c5e4e;
+      color: white;
+      padding: 12px 26px;
+      border-radius: 28px;
+      text-decoration: none;
+      width: 280px;
+      text-align: center;
+    }
+
+    .reflections-card {
+      margin: auto;
+      max-width: 760px;
+      background-color: #f4f9f6;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      line-height: 1.7;
+      margin-bottom: 30px;
+    }
+
+    .reflections-card h3 {
+      color: #2c5e4e;
+      text-align: center;
+      margin-bottom: .5rem;
+    }
+
+    .reflections-date {
+      text-align: center;
+      font-size: 14px;
+      color: #6a8a80;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+
+    .reflections-author {
+      text-align: right;
+      font-style: italic;
+      color: #2c5e4e;
+      margin: 0;
+    }
+
+    footer {
+      background: #f1ede8;
+      color: #555;
+      padding: 3rem 2rem;
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    #backToTop {
+      position: fixed;
+      bottom: 80px;
+      right: 20px;
+      background: #6ba583;
+      color: white;
+      border: none;
+      padding: 12px 16px;
+      border-radius: 999px;
+      font-size: 14px;
+      cursor: pointer;
+      display: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,.2);
+      z-index: 9998;
+    }
+
+    .crisis-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #2c5e4e;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 700;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border: 2px solid #d3b8a3;
+    }
+
+    @media (min-width: 900px) {
+      header {
+        padding: 4rem 2rem 4.5rem;
+      }
+
+      .hero-inner {
+        max-width: 980px;
+      }
+
+      .hero-logo {
+        width: 150px;
+        margin-bottom: 1.2rem;
+      }
+
+      .hero-title {
+        font-size: 3.2rem;
+      }
+
+      .hero-subtitle {
+        font-size: 1.2rem;
+        max-width: 760px;
+      }
+
+      section {
+        padding: 5rem 2rem;
+      }
+
+      h2 {
+        font-size: 2.3rem;
+      }
+
+      .about-wrap {
+        align-items: center;
+        gap: 2.5rem;
+      }
+
+      .about-photo {
+        max-width: 320px;
+      }
+
+      .about-text {
+        max-width: 680px;
+        font-size: 1.08rem;
+      }
+
+      .support-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .resources-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
   </style>
 </head>
 
 <body>
 
 <header>
-  <h1>Rao Counseling PLLC</h1>
-  <p style="color:#2d4d41;">Your journey toward clarity & healing begins here.</p>
+  <div class="hero-inner">
+    <img src="YOUR-LOGO-URL-HERE" alt="Rao Counseling PLLC logo" class="hero-logo">
+    <h1 class="hero-title">Rao Counseling PLLC</h1>
+    <p class="hero-subtitle">A warm, thoughtful space for teens and adults seeking clarity, healing, and support in Missouri City and across Texas.</p>
+  </div>
 </header>
 
 <nav>
   <a href="#about">About</a>
   <a href="#therapy-offerings">Therapy Offerings</a>
   <a href="#creative-therapy">Creative Therapy</a>
+  <a href="#resources">Resources</a>
   <a href="#faq">FAQs</a>
   <a href="#forms">Forms</a>
   <a href="#contact">Contact</a>
@@ -64,12 +504,30 @@
 
 <section id="about">
   <h2>About Me</h2>
-  <div style="display:flex;align-items:flex-start;gap:20px;flex-wrap:wrap;justify-content:center;">
-    <img src="https://charukth.github.io/Rao-counseling/images/charlie_rao_web_photo.jpg" alt="Charlie Rao, LPC" style="max-width:200px;border-radius:20px;">
-    <div style="max-width:500px;line-height:1.6;font-size:16px;">
-      <p>I started Rao Counseling to create the kind of space I wish more people had—safe, compassionate, and grounded in culture. I understand how complex family, identity, and caregiving can be, and I’m here to walk with you through it. I also support seniors, individuals navigating memory loss, and the caregivers who love them.</p>
-      <p style="margin-top:10px;font-style:italic;color: #4e9474;">(Charlie Rao, MS, LPC, #91345)</p>
+
+  <div class="about-wrap">
+    <img src="https://charukth.github.io/Rao-counseling/images/charlie_rao_web_photo.jpg" alt="Charlie Rao, LPC" class="about-photo">
+
+    <div class="about-text">
+      <p>Hi, I’m Charlie Rao, a Licensed Professional Counselor and founder of Rao Counseling PLLC.</p>
+      <p>I offer a warm, thoughtful space for teens and adults who may be feeling overwhelmed, stuck, burned out, or in transition.</p>
+      <p>My approach is collaborative, culturally aware, and grounded in both reflection and practical support.</p>
+      <p>I often work with anxiety, caregiver stress, life transitions, identity shifts, perfectionism, and the emotional weight of family or cultural expectations.</p>
+      <p>My background includes behavioral health, teaching, community outreach, and caregiving — experiences that shape how I show up with care, curiosity, and respect.</p>
+      <p class="credentials">(Charlie Rao, MS, LPC, #91345)</p>
     </div>
+  </div>
+
+  <div class="support-box">
+    <p>You don’t have to have it all figured out. These are some of the areas we can explore together:</p>
+    <ul class="support-list">
+      <li>Anxiety & feeling overwhelmed</li>
+      <li>Caregiver stress & burnout</li>
+      <li>Life transitions & identity shifts</li>
+      <li>Perfectionism & self-pressure</li>
+      <li>Cultural identity & family expectations</li>
+      <li>Feeling stuck or disconnected</li>
+    </ul>
   </div>
 </section>
 
@@ -89,90 +547,150 @@
 
 <section id="creative-therapy">
   <h2>Creative Therapy Offerings</h2>
+
   <div class="photo-container">
     <img src="https://raw.githubusercontent.com/charukth/Rao-counseling/refs/heads/main/walking-therapy.jpg" alt="Walking Therapy">
     <div class="caption"><em>Walking Therapy — nature, movement, and mindful conversation.</em></div>
   </div>
+
   <div class="photo-container">
     <img src="https://raw.githubusercontent.com/charukth/Rao-counseling/refs/heads/main/kintsugi.jpg" alt="Kintsugi">
     <div class="caption"><em>Kintsugi — embracing cracks as part of your story of healing.</em></div>
   </div>
+
   <div class="photo-container">
     <img src="https://raw.githubusercontent.com/charukth/Rao-counseling/refs/heads/main/zentangle.jpg" alt="Zentangle">
     <div class="caption"><em>Zentangle — freeform doodling as a mindful art meditation.</em></div>
   </div>
 </section>
 
-<section id="faq" class="faq">
-  <h2>Frequently Asked Questions</h2>
-  <details><summary>What is therapy?</summary><p>Therapy is a process of exploring your inner world with a trained professional to gain clarity, manage symptoms, and grow.</p></details>
-  <details><summary>What is counseling?</summary><p>Counseling focuses on resolving specific concerns through supportive conversation and guidance.</p></details>
-  <details><summary>What is your fee rate?</summary><p>$150 for 90-min intake, $100 for 60-min follow-ups, $80 for 45-min sessions. Sliding scale available.</p></details>
-<details><summary>Insurance Accepted</summary></p> Aetna • Cigna • BCBS (TX & select national plans) • Carelon Behavioral Health • Quest Behavioral Health • Ascension. Not sure about your coverage? I’m happy to help you check your benefits.</p></details>
-  <details><summary>Is therapy confidential?</summary><p>Yes, with legal exceptions for safety concerns. Your privacy is respected.</p></details>
-</section>
+<section id="resources" class="section-soft">
+  <h2>Resources</h2>
+  <p class="section-intro">A few simple tools and resources you can explore at your own pace.</p>
 
-<section id="forms" style="background-color:#f4f9f6; text-align:center;">
-  <hr style="width:60px;border:1px solid #d3b8a3;margin:0 auto 25px;">
-  <h2 style="color:#2c5e4e;">Before Your First Session</h2>
-  <p style="max-width:600px;margin:0 auto 30px;font-size:17px;color:#2c5e4e;">Please download and complete the following forms prior to your intake appointment.</p>
-  
-  <div style="display:flex;flex-direction:column;align-items:center;gap:18px;">
-    <a href="https://github.com/charukth/Rao-counseling/raw/ad7f9dbf537a7de2eaa50fff9a8ae5f3e35dc521/forms/new_client_intake_form.pdf" target="_blank" style="background-color:#2c5e4e;color:white;padding:12px 26px;border-radius:28px;text-decoration:none;width:280px;">🪴 New Client Intake Form</a>
-    <a href="https://github.com/charukth/Rao-counseling/raw/ad7f9dbf537a7de2eaa50fff9a8ae5f3e35dc521/forms/professional_disclosure_communication_policies.pdf" target="_blank" style="background-color:#2c5e4e;color:white;padding:12px 26px;border-radius:28px;text-decoration:none;width:280px;">📄 Professional Disclosure & Policies</a>
-    <a href="https://github.com/charukth/Rao-counseling/raw/ad7f9dbf537a7de2eaa50fff9a8ae5f3e35dc521/forms/crisis_response_policy.pdf" target="_blank" style="background-color:#2c5e4e;color:white;padding:12px 26px;border-radius:28px;text-decoration:none;width:280px;">⚕️ Crisis Response Policy</a>
+  <div class="resources-grid">
+    <div class="resource-card">
+      <h3>Insight Timer</h3>
+      <p>Free guided meditations, grounding practices, and sleep support.</p>
+      <p><a href="https://insighttimer.com/" target="_blank">Visit Insight Timer →</a></p>
+    </div>
+
+    <div class="resource-card">
+      <h3>The Quiet Kit</h3>
+      <p>A collection of calming tools and exercises for anxious or overwhelming moments.</p>
+      <p><a href="https://www.thequietkit.com/" target="_blank">Visit The Quiet Kit →</a></p>
+    </div>
+
+    <div class="resource-card">
+      <h3>Box Breathing</h3>
+      <p>A simple breathing technique that can help regulate your nervous system and slow things down.</p>
+      <p><a href="https://www.youtube.com/results?search_query=box+breathing" target="_blank">Explore Box Breathing →</a></p>
+    </div>
+
+    <div class="resource-card">
+      <h3>Exhalr</h3>
+      <p>A visual breathing tool for quick grounding and nervous system reset.</p>
+      <p><a href="https://xhalr.com/" target="_blank">Visit Exhalr →</a></p>
+    </div>
   </div>
 </section>
 
-<section id="contact" style="background-color:#fdfdfb;">
+<section id="faq" class="faq">
+  <h2>Frequently Asked Questions</h2>
+
+  <details>
+    <summary>What is therapy?</summary>
+    <p>Therapy is a process of exploring your inner world with a trained professional to gain clarity, manage symptoms, and grow.</p>
+  </details>
+
+  <details>
+    <summary>What is counseling?</summary>
+    <p>Counseling focuses on resolving specific concerns through supportive conversation and guidance.</p>
+  </details>
+
+  <details>
+    <summary>What is your fee rate?</summary>
+    <p>$150 for a 90-minute intake, $100 for 60-minute follow-ups, and $80 for 45-minute sessions. Sliding scale available.</p>
+  </details>
+
+  <details>
+    <summary>Insurance Accepted</summary>
+    <p>Aetna • Cigna • BCBS (TX & select national plans) • Carelon Behavioral Health • Quest Behavioral Health • Ascension. Not sure about your coverage? I’m happy to help you check your benefits.</p>
+  </details>
+
+  <details>
+    <summary>Is therapy confidential?</summary>
+    <p>Yes, with legal exceptions for safety concerns. Your privacy is respected.</p>
+  </details>
+</section>
+
+<section id="forms" class="section-soft" style="text-align:center;">
+  <hr style="width:60px;border:1px solid #d3b8a3;margin:0 auto 25px;">
+  <h2>Before Your First Session</h2>
+  <p class="section-intro">Please download and complete the following forms prior to your intake appointment.</p>
+
+  <div class="forms-buttons">
+    <a href="https://github.com/charukth/Rao-counseling/raw/ad7f9dbf537a7de2eaa50fff9a8ae5f3e35dc521/forms/new_client_intake_form.pdf" target="_blank">🪴 New Client Intake Form</a>
+    <a href="https://github.com/charukth/Rao-counseling/raw/ad7f9dbf537a7de2eaa50fff9a8ae5f3e35dc521/forms/professional_disclosure_communication_policies.pdf" target="_blank">📄 Professional Disclosure & Policies</a>
+    <a href="https://github.com/charukth/Rao-counseling/raw/ad7f9dbf537a7de2eaa50fff9a8ae5f3e35dc521/forms/crisis_response_policy.pdf" target="_blank">⚕️ Crisis Response Policy</a>
+  </div>
+</section>
+
+<section id="contact">
   <hr style="width:60px;border:1px solid #d3b8a3;margin:0 auto 25px;">
   <h2>Contact Me</h2>
-  <p style="text-align:center; color:#2d4d41; margin-bottom:30px;">I look forward to hearing from you.</p>
-  
+  <p class="section-intro">I look forward to hearing from you.</p>
+
   <form action="https://formspree.io/f/myzwepyr" method="POST" style="max-width:600px; margin:auto;">
     <label for="name">Your Name</label>
     <input id="name" name="name" type="text" placeholder="Enter your name" required>
-    
+
     <label for="email">Your Email</label>
     <input id="email" name="email" type="email" placeholder="Enter your email" required>
-    
+
     <label for="message">Your Message</label>
     <textarea id="message" name="message" rows="4" placeholder="Write your message" required></textarea>
-    
+
     <p style="font-size:.9em;color:#666;text-align:center; margin-bottom:20px;">
       Please don’t include personal health information — this form is not HIPAA-secure.
     </p>
-    
-    <div style="text-align:center;"><button type="submit">Send Message</button></div>
+
+    <div style="text-align:center;">
+      <button type="submit">Send Message</button>
+    </div>
   </form>
 
   <p style="text-align:center;margin-top:40px;color:#2c5e4e;">
-    📧 <a href="mailto:info@charlierao.org" style="color:#2c5e4e; text-decoration:none;">info@charlierao.org</a> | 
+    📧 <a href="mailto:info@charlierao.org" style="color:#2c5e4e; text-decoration:none;">info@charlierao.org</a> |
     📞 <a href="tel:2812419990" style="color:#2c5e4e; text-decoration:none;">281-241-9990</a>
   </p>
 </section>
 
-<section id="reflections" style="background-color:#fff;">
+<section id="reflections">
   <hr style="width:60px;border:1px solid #d3b8a3;margin:0 auto 25px;">
-  <h2 style="color:#2c5e4e;">Reflections</h2>
-  <p style="max-width:700px;margin:0 auto 40px;text-align:center;font-size:17px;color:#2d4d41;">Gentle thoughts and reflections on therapy, caregiving, and being human.</p>
+  <h2>Reflections</h2>
+  <p class="section-intro">Gentle thoughts and reflections on therapy, caregiving, and being human.</p>
 
-  <article style="margin:auto;max-width:750px;background-color:#f4f9f6;padding:30px;border-radius:16px;box-shadow:0 2px 8px rgba(0,0,0,0.05);line-height:1.6;margin-bottom:30px;">
-    <h3 style="color:#2c5e4e;text-align:center;">Anitya: The Gentle Practice of Letting Change Be</h3>
-    <p style="text-align:center;font-size:14px;color:#6a8a80;margin-top:-5px;margin-bottom:20px;">November 2025</p>
+  <article class="reflections-card">
+    <h3>Anitya: The Gentle Practice of Letting Change Be</h3>
+    <p class="reflections-date">November 2025</p>
     <p>Change has a way of quietly reshaping our lives long before we’re ready to name it... <em>Anitya</em> reminds us that everything is moving, shifting, softening, evolving.</p>
-    <p>Everything is temporary. Sadness is temporary. Happiness is temporary. Laughter is temporary. Over time, I’ve learned that we can either have our mind control us — or we can learn to guide it. After years, even decades, of living inside cycles of worry and rumination, I began to find my way back through practice. Meditation helped, yes, but so did the simple, steady rhythm of mindful mantras — gentle repetitions that became like light through the dark. If you’re reading this and something in your life feels uncertain or undone, take a breath.
-This too is part of the unfolding — not a sign that you’ve failed, but that you’re alive, and life is still teaching you how to flow.</p>
-    <p style="text-align:right;font-style:italic;color:#2c5e4e;margin:0;">— Charlie Rao</p>
+    <p>Everything is temporary. Sadness is temporary. Happiness is temporary. Laughter is temporary. Over time, I’ve learned that we can either have our mind control us — or we can learn to guide it. After years, even decades, of living inside cycles of worry and rumination, I began to find my way back through practice. Meditation helped, yes, but so did the simple, steady rhythm of mindful mantras — gentle repetitions that became like light through the dark. If you’re reading this and something in your life feels uncertain or undone, take a breath. This too is part of the unfolding — not a sign that you’ve failed, but that you’re alive, and life is still teaching you how to flow.</p>
+    <p class="reflections-author">— Charlie Rao</p>
   </article>
 
-  <article style="margin:auto;max-width:750px;background-color:#f4f9f6;padding:30px;border-radius:16px;box-shadow:0 2px 8px rgba(0,0,0,0.05);line-height:1.6;">
-    <h3 style="color:#2c5e4e;text-align:center;">The Quiet Weight of Caregiving</h3>
-    <p style="text-align:center;font-size:14px;color:#6a8a80;margin-top:-5px;margin-bottom:20px;">January 2026</p>
-    <p>Caregiving often grows from deep family bonds. Sometimes the most supportive step is simply creating space to acknowledge the full experience — devotion alongside fatigue, purpose alongside grief.In my own experience, caregiving was both deeply challenging and deeply meaningful. There were moments when I felt stretched to my limits, unsure how much more I could hold. And yet, on the other side of that experience, I recognize how much it expanded my capacity for understanding, presence, and connection. Both truths existed at once.
-What is most supportive for caregivers is not rejecting cultural values or family roles but creating space to hold the full experience — devotion alongside fatigue and purpose alongside grief. Therapy can offer caregivers a place to be seen as whole people, not just responsibilities. When empathy is extended inward as well as outward, caregiving becomes more sustainable, and its meaning can remain intact.</p>
-    <p style="text-align:right;font-style:italic;color:#2c5e4e;margin:0;">— Charlie Rao</p>
+  <article class="reflections-card">
+    <h3>The Quiet Weight of Caregiving</h3>
+    <p class="reflections-date">January 2026</p>
+    <p>Caregiving often grows from deep family bonds. Sometimes the most supportive step is simply creating space to acknowledge the full experience — devotion alongside fatigue, purpose alongside grief.</p>
+    <p>In my own experience, caregiving was both deeply challenging and deeply meaningful. There were moments when I felt stretched to my limits, unsure how much more I could hold. And yet, on the other side of that experience, I recognize how much it expanded my capacity for understanding, presence, and connection. Both truths existed at once. What is most supportive for caregivers is not rejecting cultural values or family roles but creating space to hold the full experience — devotion alongside fatigue and purpose alongside grief. Therapy can offer caregivers a place to be seen as whole people, not just responsibilities. When empathy is extended inward as well as outward, caregiving becomes more sustainable, and its meaning can remain intact.</p>
+    <a href="https://samhin.org/" target="_blank" class="reflection-link">Continue reading on SAMHIN →</a>
+    <p class="reflections-author">— Charlie Rao</p>
   </article>
+
+  <div class="medium-wrap">
+    <a href="https://medium.com/" target="_blank" class="medium-link">More reflections on Medium (free to explore) →</a>
+  </div>
 </section>
 
 <footer>
@@ -185,14 +703,17 @@ What is most supportive for caregivers is not rejecting cultural values or famil
 <button id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'});">↑ Top</button>
 
 <script>
-  const btn=document.getElementById("backToTop");
-  window.onscroll=function(){
-    if(document.body.scrollTop>200||document.documentElement.scrollTop>200){btn.style.display="block";}
-    else{btn.style.display="none";}
+  const btn = document.getElementById("backToTop");
+  window.onscroll = function() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
   };
 </script>
 
-<a href="tel:988" style="position: fixed; bottom: 20px; right: 20px; background-color: #2c5e4e; color: white; padding: 12px 20px; border-radius: 50px; text-decoration: none; font-size: 14px; font-weight: bold; box-shadow: 0 4px 12px rgba(0,0,0,0.2); z-index: 9999; display: flex; align-items: center; gap: 8px; border: 2px solid #d3b8a3;">
+<a href="tel:988" class="crisis-button">
   <span style="font-size: 18px;">🆘</span> Crisis Support: Dial 988
 </a>
 
