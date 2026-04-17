@@ -90,30 +90,43 @@
 
     nav {
       background: #6ba583;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: .75rem;
-      padding: 1rem;
+      padding: 0.8rem 1rem;
       position: sticky;
       top: 0;
       z-index: 1000;
       box-shadow: 0 2px 8px rgba(0,0,0,.06);
     }
 
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.6rem;
+      margin: 0;
+      padding: 0;
+      flex-wrap: wrap;
+    }
+
+    nav li {
+      display: flex;
+    }
+
     nav a {
       background: #4e9474;
       color: #fff;
-      padding: .65rem 1.2rem;
+      padding: 0.55rem 1.1rem;
       border-radius: 999px;
       text-decoration: none;
       font-weight: 700;
-      transition: .3s;
-      font-size: .98rem;
+      font-size: 0.95rem;
+      transition: 0.25s ease;
+      display: inline-block;
     }
 
     nav a:hover {
       background: #3e7c60;
+      transform: translateY(-1px);
     }
 
     section {
@@ -266,6 +279,8 @@
     .resources-section {
       background: #f4f9f6;
       border-radius: 28px;
+      padding: 2rem 1.5rem;
+      overflow: hidden;
     }
 
     .resources-grid {
@@ -579,13 +594,13 @@
 
 <nav>
   <ul>
-  <li><a href="#about">About</a></li>
-  <li><a href="#services">Services</a></li>
-  <li><a href="#forms">Forms</a></li>
-  <li><a href="#resources">Resources</a></li>
-  <li><a href="#faqs">FAQs</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="https://charlierao.wordpress.com" target="_blank">Reflections</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#therapy-offerings">Services</a></li>
+    <li><a href="#forms">Forms</a></li>
+    <li><a href="#resources">Resources</a></li>
+    <li><a href="#faq">FAQs</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="https://charlierao.wordpress.com" target="_blank" rel="noopener noreferrer">Blog</a></li>
   </ul>
 </nav>
 
@@ -677,25 +692,31 @@
     <div class="resource-card">
       <h3>Insight Timer</h3>
       <p>Free guided meditations, grounding practices, and sleep support.</p>
-      <p><a href="https://insighttimer.com/" target="_blank">Visit Insight Timer →</a></p>
+      <p><a href="https://insighttimer.com/" target="_blank" rel="noopener noreferrer">Visit Insight Timer →</a></p>
     </div>
 
     <div class="resource-card">
       <h3>The Quiet Kit</h3>
       <p>A collection of calming tools and exercises for anxious or overwhelming moments.</p>
-      <p><a href="https://www.quietkit.com/" target="_blank">Visit The Quiet Kit →</a></p>
+      <p><a href="https://www.quietkit.com/" target="_blank" rel="noopener noreferrer">Visit The Quiet Kit →</a></p>
     </div>
 
     <div class="resource-card">
       <h3>Exhalr</h3>
       <p>A visual breathing tool for quick grounding and nervous system reset.</p>
-      <p><a href="https://xhalr.com/" target="_blank">Visit Exhalr →</a></p>
+      <p><a href="https://xhalr.com/" target="_blank" rel="noopener noreferrer">Visit Exhalr →</a></p>
     </div>
 
     <div class="resource-card">
       <h3>Ten Percent Happier</h3>
       <p>Practical, approachable meditations and emotional skills for everyday life.</p>
-      <p><a href="https://youtube.com/@tenpercenthappier?si=2JhCU35EpEZPSG5n" target="_blank">Visit Ten Percent Happier →</a></p>
+      <p><a href="https://youtube.com/@tenpercenthappier?si=2JhCU35EpEZPSG5n" target="_blank" rel="noopener noreferrer">Visit Ten Percent Happier →</a></p>
+    </div>
+
+    <div class="resource-card">
+      <h3>Blog</h3>
+      <p>Longer-form writing on caregiving, identity, and navigating change.</p>
+      <p><a href="https://charlierao.wordpress.com" target="_blank" rel="noopener noreferrer">Visit the blog →</a></p>
     </div>
   </div>
 </section>
@@ -719,27 +740,25 @@
   </details>
 
   <details>
-  <summary>Insurance Accepted</summary>
+    <summary>Insurance Accepted</summary>
 
-  <p>
-    Aetna • Cigna • BCBS (TX &amp; select national plans) • Carelon Behavioral Health • Quest Behavioral Health • Ascension.
-  </p>
+    <p>
+      Aetna • Cigna • BCBS (TX &amp; select national plans) • Carelon Behavioral Health • Quest Behavioral Health • Ascension.
+    </p>
 
-  <p>
-    I accept insurance through Headway, where you can check your benefits and book directly.
-  </p>
+    <p>
+      I accept insurance through Headway, where you can check your benefits and book directly.
+    </p>
 
-  <p style="text-align:center; margin-top:10px;">
-    <a href="https://care.headway.co/providers/charlie-rao-4" target="_blank"
-       style="background-color:#2c5e4e;color:white;padding:10px 18px;border-radius:8px;text-decoration:none;">
-       Check Insurance &amp; Book
-    </a>
-  </p>
+    <p style="text-align:center; margin-top:10px;">
+      <a href="https://care.headway.co/providers/charlie-rao-4" target="_blank" rel="noopener noreferrer" style="background-color:#2c5e4e;color:white;padding:10px 18px;border-radius:8px;text-decoration:none;">
+        Check Insurance &amp; Book
+      </a>
+    </p>
 
-  <p style="margin-top:10px;">
-    Not sure about your coverage? I’m happy to help you check your benefits.
-  </p>
-
+    <p style="margin-top:10px;">
+      Not sure about your coverage? I’m happy to help you check your benefits.
+    </p>
   </details>
 
   <details>
@@ -753,104 +772,4 @@
   <h2>Before Your First Session</h2>
   <p class="section-intro">Please download and complete the following forms prior to your intake appointment.</p>
 
-  <div class="forms-buttons">
-    <a href="https://github.com/charukth/Rao-counseling/raw/ad7f9dbf537a7de2eaa50fff9a8ae5f3e35dc521/forms/new_client_intake_form.pdf" target="_blank">🪴 New Client Intake Form</a>
-    <a href="https://github.com/charukth/Rao-counseling/raw/ad7f9dbf537a7de2eaa50fff9a8ae5f3e35dc521/forms/professional_disclosure_communication_policies.pdf" target="_blank">📄 Professional Disclosure &amp; Policies</a>
-    <a href="https://github.com/charukth/Rao-counseling/raw/ad7f9dbf537a7de2eaa50fff9a8ae5f3e35dc521/forms/crisis_response_policy.pdf" target="_blank">⚕️ Crisis Response Policy</a>
-  </div>
-</section>
-
-<section id="contact">
-  <hr class="divider">
-  <h2>Contact Me</h2>
-  <p class="section-intro">I look forward to hearing from you.</p>
-
-  <form action="https://formspree.io/f/myzwepyr" method="POST" style="max-width:600px; margin:auto;">
-    <label for="name">Your Name</label>
-    <input id="name" name="name" type="text" placeholder="Enter your name" required>
-
-    <label for="email">Your Email</label>
-    <input id="email" name="email" type="email" placeholder="Enter your email" required>
-
-    <label for="message">Your Message</label>
-    <textarea id="message" name="message" rows="4" placeholder="Write your message" required></textarea>
-
-    <p style="font-size:.9em;color:#666;text-align:center; margin-bottom:20px;">
-      Please don’t include personal health information — this form is not HIPAA-secure.
-    </p>
-
-    <div style="text-align:center;">
-      <button type="submit">Send Message</button>
-    </div>
-  </form>
-
-  <p style="text-align:center;margin-top:40px;color:#2c5e4e;">
-    📧 <a href="mailto:info@charlierao.org" style="color:#2c5e4e; text-decoration:none;">info@charlierao.org</a> |
-    📞 <a href="tel:2812419990" style="color:#2c5e4e; text-decoration:none;">281-241-9990</a>
-  </p>
-</section>
-<div class="resource-card">
-  <h3>Blog</h3>
-  <p>Longer-form writing on caregiving, identity, and navigating change.</p>
-  <p>
-    <a href="https://charlierao.wordpress.com" target="_blank" rel="noopener noreferrer">
-      Visit the blog →
-    </a>
-  </p>
-</div>
-  <a href="https://charlierao.wordpress.com" target="_blank">
-  </a>
-</div>
-<section id="reflections">
-  <hr class="divider">
-  <h2>Reflections</h2>
-  <p class="section-intro">Gentle thoughts and reflections on therapy, caregiving, and being human.</p>
-
-  <article class="reflections-card">
-    <h3>Anitya: The Gentle Practice of Letting Change Be</h3>
-    <p class="reflections-date">November 2025</p>
-    <p>Change has a way of quietly reshaping our lives long before we’re ready to name it... <em>Anitya</em> reminds us that everything is moving, shifting, softening, evolving.</p>
-    <p>Everything is temporary. Sadness is temporary. Happiness is temporary. Laughter is temporary. Over time, I’ve learned that we can either have our mind control us — or we can learn to guide it. After years, even decades, of living inside cycles of worry and rumination, I began to find my way back through practice. Meditation helped, yes, but so did the simple, steady rhythm of mindful mantras — gentle repetitions that became like light through the dark. If you’re reading this and something in your life feels uncertain or undone, take a breath. This too is part of the unfolding — not a sign that you’ve failed, but that you’re alive, and life is still teaching you how to flow.</p>
-    <p class="reflections-author">— Charlie Rao</p>
-  </article>
-
-  <article class="reflections-card">
-    <h3>The Quiet Weight of Caregiving</h3>
-    <p class="reflections-date">January 2026</p>
-    <p>Caregiving often grows from deep family bonds. Sometimes the most supportive step is simply creating space to acknowledge the full experience — devotion alongside fatigue, purpose alongside grief.</p>
-    <p>In my own experience, caregiving was both deeply challenging and deeply meaningful. There were moments when I felt stretched to my limits, unsure how much more I could hold. And yet, on the other side of that experience, I recognize how much it expanded my capacity for understanding, presence, and connection. Both truths existed at once. What is most supportive for caregivers is not rejecting cultural values or family roles but creating space to hold the full experience — devotion alongside fatigue and purpose alongside grief. Therapy can offer caregivers a place to be seen as whole people, not just responsibilities. When empathy is extended inward as well as outward, caregiving becomes more sustainable, and its meaning can remain intact.</p>
-    <a href="https://samhin.org/caregiving-stress-in-south-asian-families-shared-strength-quiet-expectation-and-enduring-meaning/" target="_blank" class="reflection-link">Continue reading on SAMHIN →</a>
-    <p class="reflections-author">— Charlie Rao</p>
-  </article>
-
-  <div class="medium-wrap">
-    <a href="https://medium.com/@charukt" target="_blank" class="medium-link">More reflections on Medium (free to explore) →</a>
-  </div>
-</section>
-
-<footer>
-  <p>© 2026 Rao Counseling PLLC · Missouri City, TX</p>
-  <p style="font-size:0.85rem; color:#666; max-width:700px; margin:1rem auto;">
-    This site uses basic analytics to improve usability. No personal or health information is collected.
-  </p>
-</footer>
-
-<button id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'});">↑ Top</button>
-
-<script>
-  const btn = document.getElementById("backToTop");
-  window.onscroll = function() {
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-      btn.style.display = "block";
-    } else {
-      btn.style.display = "none";
-    }
-  };
-</script>
-
-<a href="tel:988" class="crisis-button">
-  <span style="font-size: 18px;">🆘</span> Crisis Support: Dial 988
-</a>
-
-</body>
-</html>
+  <
